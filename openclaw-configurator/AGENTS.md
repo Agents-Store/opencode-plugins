@@ -1,0 +1,76 @@
+# openclaw-configurator
+
+> OpenClaw instance configurator and operations plugin. Scan, analyze, and optimize all workspace files (AGENTS.md, SOUL.md, USER.md, IDENTITY.md, TOOLS.md, HEARTBEAT.md, MEMORY.md, BOOT.md, BOOTSTRAP.md) plus openclaw.json. Update instances from official GitHub releases. Guided interviews, session log analysis, standing orders design, security audit, config validation, permission fix hooks, and 6 industry-specific workspace templates.
+
+Canonical: https://github.com/agents-store/claude-public-plugins/tree/main/plugins/openclaw-configurator
+
+## Skills (exposed as subagents)
+
+- `@skill-agents-md` — Guide for creating and customizing AGENTS.md — the operating rules, procedures, and behavioral guardrails for an OpenClaw agent. Use this skill whenever the user is working on agent behavior, operating procedures, session startup sequences, memory management policies, group chat rules, safety red lines, tool usage priorities, or standing order references. Even if they just say "the agent should do X differently" or "add a rule for Y", this skill applies because operational rules belong in AGENTS.md. Also use when deciding what belongs in AGENTS.md versus SOUL.md — this skill clarifies the boundary.
+- `@skill-bootstrap-boot` — Guide for BOOTSTRAP.md (first-run setup ritual) and BOOT.md (gateway restart checklist) in OpenClaw. Use this skill whenever the user is setting up a new agent for the first time, configuring onboarding flows, creating first-run discovery processes, or defining what should happen on gateway restart. Even questions like "what should happen when the agent starts for the first time", "how do I initialize a fresh agent", or "what runs on reboot" need this skill.
+- `@skill-config-validation` — Validates openclaw.json against official OpenClaw documentation and checks for latest features, deprecated settings, and security issues. Use this skill whenever the user wants to verify their configuration is correct, check if they're using the latest OpenClaw features, audit their openclaw.json for problems, or compare their config against best practices. Also applies when the user says things like "is my config OK", "what am I missing in my setup", or "check my OpenClaw configuration".
+- `@skill-examples` — Complete end-to-end workspace customization examples for different industries — legal firms, dev teams, marketing agencies, customer support, personal assistants, and content creators. Use this skill whenever the user wants to see a reference implementation, asks "how would you set up OpenClaw for X", wants to see what a complete workspace looks like, or needs a starting template for their industry. Even vague requests like "show me an example" or "what does a good workspace look like" should trigger this skill.
+- `@skill-heartbeat-md` — Guide for configuring HEARTBEAT.md — the periodic background task checklist that OpenClaw executes on a schedule. Use this skill whenever the user needs background monitoring, periodic checks, standing orders integration, quiet hours configuration, or wants to understand heartbeat mechanics and token costs. Even questions like "how do I make the agent check something periodically", "set up monitoring", or "reduce heartbeat token costs" need this skill.
+- `@skill-identity-md` — Guide for creating IDENTITY.md — the agent's name, creature type, vibe, emoji, and avatar in OpenClaw. Use this skill whenever the user is naming their agent, choosing an emoji or avatar, setting up the agent's visual identity, or asking how agent identity works. Even simple questions like "what should I name my agent", "how do I set the bot emoji", or "change the agent's avatar" need this skill.
+- `@skill-memory-system` — Guide for OpenClaw's memory system — MEMORY.md curation, daily logs, memory flush, and vector search. Use this skill whenever the user asks about how the agent remembers things between sessions, wants to configure memory management, needs to understand daily logs versus long-term memory, or is setting up memory curation processes. Also applies to questions about vector search, memory security in groups, or "how does the agent remember".
+- `@skill-openclaw-config` — Comprehensive guide for openclaw.json — the central gateway configuration file controlling models, channels, tools, plugins, and sessions. Use this skill whenever the user needs to understand, modify, or troubleshoot their openclaw.json. Covers agent settings, Telegram/Discord/WhatsApp channel setup, tool profiles, plugin management, session behavior, secret handling with SecretRef, and model configuration. Even questions like "how do I add Telegram", "change the model", or "what does this config field do" need this skill.
+- `@skill-security-audit` — Workspace prompt security audit checklist — checks for hardcoded secrets, prompt injection risks, data leakage, missing safety rules, PII exposure, and overly broad standing orders. Use this skill whenever auditing workspace security, checking for vulnerabilities, reviewing prompt safety, or as part of any workspace optimization. Even if the user doesn't explicitly ask for security, include these checks when doing a full workspace review, optimization, or pre-deployment audit.
+- `@skill-session-analysis` — Techniques for analyzing OpenClaw session JSONL logs to understand user behavior, tool effectiveness, error patterns, token costs, and active hours. Use this skill whenever the user wants to analyze how their agent is performing, what users are asking, which tools work best, what errors occur, or how to improve the workspace based on real usage data. Also applies to questions like "what do my users ask about", "is my agent working well", or "show me session stats".
+- `@skill-soul-md` — Guide for creating and refining SOUL.md — the agent's personality, values, tone, and boundaries. Use this skill whenever the user is working on who the agent should be, its communication style, persona traits, behavioral boundaries, or domain-specific character. Even requests like "make the agent more friendly", "add a boundary", "change the tone", or "the agent sounds too corporate" need this skill because personality and tone live in SOUL.md, not AGENTS.md.
+- `@skill-standing-orders` — Design patterns for standing orders — autonomous programs that give agents permanent operating authority for defined tasks. Use this skill whenever the user needs recurring tasks, scheduled agent operations, autonomous execution rules, or the execute-verify-report pattern. Also applies when discussing cron jobs with OpenClaw, periodic reports, automated monitoring, content scheduling, or any task the agent should do on its own without prompting each time.
+- `@skill-tools-md` — Guide for optimizing TOOLS.md — environment-specific tool notes, search priorities, device names, and local infrastructure details. Use this skill whenever the user is configuring which tools their agent should prefer, adding environment notes, documenting search tool priority orders, or setting up device/API references. Even questions like "which search tool should my agent use first", "how do I tell the agent about my devices", or "add tool notes" need this skill.
+- `@skill-user-md` — Guide for building USER.md — user profiles, preferences, roles, and communication styles. Use this skill whenever the user is setting up who will interact with the agent, mapping Telegram/Discord user IDs to names, configuring multi-user access, or defining communication preferences. Even questions like "how does the agent know who I am", "add a team member", or "set up user permissions" need this skill.
+- `@skill-workspace-overview` — OpenClaw workspace architecture and file system overview — directory structure, file loading mechanics, character limits, scan categories (A-J), and subfolder organization patterns. Use this skill whenever the user asks about how the workspace is structured, what files get loaded automatically, character limits, what goes where, or how to organize their workspace. This is the foundational skill — use it first when the user is new to OpenClaw or asks broad questions about workspace organization, even before more specific skills like agents-md or soul-md.
+
+## Agents
+
+- `@openclaw-configurator-assistant` — Interactive OpenClaw workspace and configuration assistant. Helps users scan, analyze, and optimize all workspace files (AGENTS.md, SOUL.md, USER.md, IDENTITY.md, TOOLS.md, HEARTBEAT.md, MEMORY.md, BOOTSTRAP.md, BOOT.md) plus openclaw.json. Guides through interviews, session analysis, security audits, config validation, and industry-specific workspace templates.
+
+<example>
+user: "Help me set up my OpenClaw workspace for a legal firm"
+</example>
+<example>
+user: "Optimize my OpenClaw SOUL.md"
+</example>
+<example>
+user: "Scan my OpenClaw workspace and tell me what's missing"
+</example>
+<example>
+user: "How should I configure AGENTS.md for a dev team?"
+</example>
+<example>
+user: "Analyze my OpenClaw session logs for optimization opportunities"
+</example>
+<example>
+user: "Configure my openclaw.json channels"
+</example>
+<example>
+user: "Validate my OpenClaw config against the latest docs"
+</example>
+<example>
+user: "Run a security audit on my workspace"
+</example>
+
+- `@openclaw-workspace-auditor` — Autonomous OpenClaw workspace auditor. Scans all workspace files (categories A–J), sessions, cron, logs, skills, plugins, openclaw.json, performs prompt security audit, checks for inline secrets, validates config against official docs, and produces a comprehensive health report. Read-only — does not modify files.
+
+<example>
+user: "Audit my OpenClaw workspace"
+</example>
+<example>
+user: "Review my OpenClaw workspace health"
+</example>
+<example>
+user: "What's wrong with my OpenClaw configuration?"
+</example>
+<example>
+user: "Check my workspace for security issues"
+</example>
+
+
+## Commands
+
+- `/config-validate` — Validate openclaw.json against official documentation, check for latest features, detect inline secrets, and verify cross-references with workspace files
+- `/instance-update` — Update OpenClaw instance from official GitHub repo — fetch latest tag, merge into dev preserving local changes, rebuild Docker containers
+- `/workspace-interview` — Guided discovery session to understand goals, users, tasks, and success criteria for OpenClaw workspace customization
+- `/workspace-optimize` — Optimize a specific OpenClaw workspace file or all files at once, with security checks and optional openclaw.json editing
+- `/workspace-scan` — Quick health check of OpenClaw instance — scans all categories (A–J), checks sizes, detects inline secrets, identifies missing components, verifies language

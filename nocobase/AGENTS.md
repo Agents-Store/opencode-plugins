@@ -1,0 +1,50 @@
+# nocobase
+
+> NocoBase platform development plugin. Expert guidance on collections, fields, relations, workflows, UI blocks, plugin development, MCP-powered page management, data operations, and collection inspection for NocoBase applications.
+
+Canonical: https://github.com/agents-store/claude-public-plugins/tree/main/plugins/nocobase
+
+## Skills (exposed as subagents)
+
+- `@skill-collections-design` — Collection design patterns — collection types, naming conventions, system fields, inheritance, tree structures. This skill should be used when the user asks to design a data model, create collections, plan entity relationships, or choose collection types.
+- `@skill-data-operations` — Data CRUD operations — list, create, update, delete records. This skill should be used when the user asks to add records, query or filter data, update fields, delete entries, or bulk create records.
+- `@skill-examples` — Application design scenarios and reference implementations. This skill should be used when the user needs complete application examples, tool call patterns, or end-to-end workflow references.
+- `@skill-fields-relations` — Field types and relation configuration — basic, advanced, relation fields, foreign keys, through tables. This skill should be used when the user asks to configure fields, set up relations between collections, or manage foreign keys and through tables.
+- `@skill-plugin-development` — Plugin scaffolding and development — lifecycle, server-side, client-side, migrations, testing. This skill should be used when the user asks to develop custom plugins, extend platform functionality, or scaffold plugin structure.
+- `@skill-ui-configuration` — UI blocks, pages, actions, and field components. This skill should be used when the user asks to create a page, add a table or form block, build a dashboard, set up a kanban board, or configure menu structure.
+- `@skill-workflows-automations` — Workflow engine — triggers, node types, conditions, variables, approval flows. This skill should be used when the user asks to create workflows, set up triggers, build approval flows, or automate business processes.
+
+## Agents
+
+- `@nocobase-assistant` — Interactive NocoBase platform expert. Manages collections, pages, UI blocks, data operations, and workflows for NocoBase applications.
+
+<example>
+user: "Help me design a CRM data model in NocoBase"
+</example>
+<example>
+user: "Create a contacts page with a table block and filters"
+</example>
+<example>
+user: "Set up a workflow that sends notifications on new orders"
+</example>
+
+- `@nocobase-builder` — NocoBase application builder. Creates pages, configures UI blocks, manages data, and inspects collections.
+
+<example>
+user: "Build a page for the orders collection with a table and form"
+</example>
+<example>
+user: "Import 50 sample contacts into NocoBase"
+</example>
+
+
+## Commands
+
+- `/create-page` — Create a NocoBase page with blocks
+- `/create-plugin-scaffold` — Generate NocoBase plugin scaffold structure
+- `/create-record` — Create a record in a NocoBase collection
+- `/design-collection` — Design a NocoBase collection schema
+- `/design-ui-block` — Design a NocoBase UI block layout
+- `/list-collections` — List all NocoBase collections
+- `/list-records` — List records from a NocoBase collection
+- `/plan-workflow` — Plan a NocoBase workflow automation

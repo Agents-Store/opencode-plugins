@@ -1,0 +1,22 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "nocobase": {
+      "enabled": true,
+      "type": "local",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@nocobase/mcp-server"
+      ],
+      "env": {
+        "NOCOBASE_URL": "{env:NOCOBASE_URL}",
+        "NOCOBASE_EMAIL": "{env:NOCOBASE_EMAIL}",
+        "NOCOBASE_PASSWORD": "{env:NOCOBASE_PASSWORD}"
+      }
+    }
+  },
+  "instructions": [
+    "AGENTS.md"
+  ]
+}

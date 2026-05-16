@@ -1,0 +1,16 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "nocodb": {
+      "enabled": true,
+      "type": "remote",
+      "url": "{env:NOCODB_MCP_URL}",
+      "headers": {
+        "xc-mcp-token": "{env:NOCODB_MCP_TOKEN}"
+      }
+    }
+  },
+  "instructions": [
+    "AGENTS.md"
+  ]
+}

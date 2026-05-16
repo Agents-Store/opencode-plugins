@@ -1,0 +1,21 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "dokploy": {
+      "enabled": true,
+      "type": "local",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@dokploy/mcp"
+      ],
+      "env": {
+        "DOKPLOY_URL": "{env:DOKPLOY_URL}",
+        "DOKPLOY_API_KEY": "{env:DOKPLOY_API_KEY}"
+      }
+    }
+  },
+  "instructions": [
+    "AGENTS.md"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "sendpulse": {
+      "enabled": true,
+      "type": "remote",
+      "url": "https://mcp.sendpulse.com/mcp"
+    }
+  },
+  "instructions": [
+    "AGENTS.md"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "monobank": {
+      "enabled": true,
+      "type": "remote",
+      "url": "{env:MONOBANK_MCP_URL}"
+    },
+    "privatbank": {
+      "enabled": true,
+      "type": "remote",
+      "url": "{env:PRIVATBANK_MCP_URL}"
+    }
+  },
+  "instructions": [
+    "AGENTS.md"
+  ]
+}

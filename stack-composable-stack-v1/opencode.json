@@ -1,0 +1,69 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "trigger-dev": {
+      "enabled": true,
+      "type": "local",
+      "command": "npx",
+      "args": [
+        "trigger.dev@latest",
+        "mcp"
+      ],
+      "env": {
+        "TRIGGER_ACCESS_TOKEN": "{env:TRIGGER_SECRET_KEY}",
+        "TRIGGER_API_URL": "{env:TRIGGER_API_URL}"
+      }
+    },
+    "n8n-mcp-external": {
+      "enabled": true,
+      "type": "local",
+      "command": "npx",
+      "args": [
+        "n8n-mcp"
+      ],
+      "env": {
+        "MCP_MODE": "stdio",
+        "LOG_LEVEL": "error",
+        "DISABLE_CONSOLE_OUTPUT": "true",
+        "N8N_API_URL": "{env:N8N_API_URL}",
+        "N8N_API_KEY": "{env:N8N_API_KEY}"
+      }
+    },
+    "n8n-native-mcp": {
+      "enabled": true,
+      "type": "remote",
+      "url": "{env:N8N_NATIVE_MCP_URL}",
+      "headers": {
+        "Authorization": "Bearer {env:N8N_MCP_TOKEN}"
+      }
+    },
+    "nocodb": {
+      "enabled": true,
+      "type": "remote",
+      "url": "{env:NOCODB_MCP_URL}",
+      "headers": {
+        "xc-mcp-token": "{env:NOCODB_TOKEN}"
+      }
+    },
+    "postgresql-mcp": {
+      "enabled": true,
+      "type": "remote",
+      "url": "{env:POSTGRESQL_MCP_URL}",
+      "headers": {
+        "Authorization": "Bearer {env:POSTGRESQL_MCP_TOKEN}"
+      }
+    },
+    "nocobase-dev": {
+      "enabled": true,
+      "type": "remote",
+      "url": "{env:NOCOBASE_DEV_URL}/api/mcp",
+      "headers": {
+        "Authorization": "Bearer {env:NOCOBASE_DEV_API_KEY}",
+        "x-mcp-packages": "plugin-data-source-main,plugin-data-source-manager,plugin-workflow*,plugin-acl,plugin-users,plugin-auth,plugin-client,plugin-flow-engine,plugin-ai"
+      }
+    }
+  },
+  "instructions": [
+    "AGENTS.md"
+  ]
+}

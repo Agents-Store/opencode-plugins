@@ -1,0 +1,16 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "directus": {
+      "enabled": true,
+      "type": "remote",
+      "url": "{env:NEXT_PUBLIC_DIRECTUS_URL}/mcp",
+      "headers": {
+        "Authorization": "Bearer {env:DIRECTUS_ADMIN_TOKEN}"
+      }
+    }
+  },
+  "instructions": [
+    "AGENTS.md"
+  ]
+}

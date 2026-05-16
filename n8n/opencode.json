@@ -1,0 +1,16 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "n8n": {
+      "enabled": true,
+      "type": "remote",
+      "url": "{env:N8N_MCP_URL}",
+      "headers": {
+        "Authorization": "Bearer {env:N8N_MCP_TOKEN}"
+      }
+    }
+  },
+  "instructions": [
+    "AGENTS.md"
+  ]
+}

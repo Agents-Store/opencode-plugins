@@ -1,0 +1,13 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "deep-research": {
+      "enabled": true,
+      "type": "remote",
+      "url": "https://mcp.mcpware.net/mcp/d1ab2e49-a032-4788-9ba5-3125624f2769"
+    }
+  },
+  "instructions": [
+    "AGENTS.md"
+  ]
+}

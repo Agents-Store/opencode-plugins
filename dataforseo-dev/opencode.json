@@ -1,0 +1,21 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "dataforseo": {
+      "enabled": true,
+      "type": "local",
+      "command": "npx",
+      "args": [
+        "-y",
+        "dataforseo-mcp-server@latest"
+      ],
+      "env": {
+        "DATAFORSEO_USERNAME": "{env:DATAFORSEO_USERNAME}",
+        "DATAFORSEO_PASSWORD": "{env:DATAFORSEO_PASSWORD}"
+      }
+    }
+  },
+  "instructions": [
+    "AGENTS.md"
+  ]
+}
