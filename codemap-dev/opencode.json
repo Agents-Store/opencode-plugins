@@ -5,6 +5,15 @@
       "enabled": true,
       "type": "remote",
       "url": "https://mcp.draw.io/mcp"
+    },
+    "playwright": {
+      "enabled": true,
+      "type": "local",
+      "command": "npx",
+      "args": [
+        "@playwright/mcp@latest",
+        "--headless"
+      ]
     }
   },
   "instructions": [

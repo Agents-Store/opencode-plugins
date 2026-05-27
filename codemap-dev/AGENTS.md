@@ -1,6 +1,6 @@
 # codemap-dev
 
-> Code understanding plugin for developers. Helps onboard to unfamiliar projects through beginner-friendly code review, step-by-step explanations, and visual diagrams (architecture, ERD, flows) via drawio-mcp.
+> Code understanding plugin for developers. Helps onboard to unfamiliar projects through beginner-friendly code review, step-by-step explanations, visual diagrams (architecture, ERD, flows) via drawio-mcp, and frontend testing via Playwright MCP.
 
 Canonical: https://github.com/agents-store/claude-public-plugins/tree/main/plugins/codemap-dev
 
@@ -13,6 +13,8 @@ Canonical: https://github.com/agents-store/claude-public-plugins/tree/main/plugi
 - `@skill-codemap-review` — This skill should be used when the user asks to "review code", "check this file", "what's wrong with this code", "review my PR", "code quality check", "find issues in this code", or wants feedback on readability, style, security, or common beginner mistakes. Provides structured review with "why" explanations, not just "what" fixes. Also triggers when a developer asks "is this code okay", "what can I improve", or "check my work".
 
 - `@skill-codemap-examples` — This skill should be used when the user asks for "codemap examples", "how to use codemap", "show me what codemap can do", "codemap walkthrough", or wants to see end-to-end usage scenarios for the codemap plugin.
+
+- `@skill-frontend-test` — This skill should be used when the user asks to "test the frontend", "check the UI", "explore the app in a browser", "test my admin panel", "find frontend bugs", "check for console errors", "verify the app works in a browser", "test user flows", "check the website", or wants a comprehensive frontend health report for a running application. Also triggers when the user says "open my app and test it", "browse my app", "check if the UI is working", or "give me a frontend report". Uses Playwright MCP to navigate, interact, and diagnose.
 
 
 ## Agents
@@ -104,6 +106,35 @@ Developer wants a sequence diagram for a specific endpoint.
 </commentary>
 </example>
 
+- `@frontend-tester` — Use this agent when the user wants to test the frontend of a running application — navigate pages, check UI elements, test forms, find console errors, verify user flows, or generate a frontend health report.
+
+<example>
+Context: User wants to verify their app's frontend works
+user: "Test the frontend of my app running on localhost:3000"
+assistant: "I'll use the frontend-tester agent to navigate and test the app."
+<commentary>
+Developer wants automated frontend exploration and testing of their running app.
+</commentary>
+</example>
+
+<example>
+Context: User wants to check their admin panel
+user: "Check the admin panel at localhost:8080/admin for UI issues"
+assistant: "I'll use the frontend-tester agent to explore and test the admin panel."
+<commentary>
+Developer wants to verify an admin interface for broken elements and errors.
+</commentary>
+</example>
+
+<example>
+Context: User wants a comprehensive frontend report
+user: "Give me a full report on how the frontend works and any issues"
+assistant: "I'll use the frontend-tester agent to do a thorough frontend analysis."
+<commentary>
+Developer wants a structured report covering pages, flows, errors, and UI health.
+</commentary>
+</example>
+
 
 ## Commands
 
@@ -113,3 +144,4 @@ Developer wants a sequence diagram for a specific endpoint.
 - `/flows` — Find main user flows (entry points → services → DB) and visualize them
 - `/onboard` — Generate a full onboarding report — README summary, stack, folder structure, entry points, how to run locally, and 3 main diagrams (architecture, main flow, DB)
 - `/review` — Review a file, directory, or PR diff in beginner-friendly mode — structured feedback with "why" explanations
+- `/test-frontend` — Test a running app's frontend — navigate pages, check UI, find errors, generate report
