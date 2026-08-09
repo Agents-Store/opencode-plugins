@@ -1,0 +1,58 @@
+# macstack-dev
+
+> MACSTACK dev plugin for Agents Store. Creates and maintains macstack.json — the standardized business + technical stack specification for Claude projects: init in existing projects, generate from scratch (result-first), discover context plugins and prototypes, scaffold project files in the prototype → stack plugins → dev plugins order, wire Infisical env, install best-practice rules and commands.
+
+Canonical: https://github.com/agents-store/claude-public-plugins/tree/main/plugins/macstack-dev
+
+## Skills (exposed as subagents)
+
+- `@skill-best-practices` — This skill should be used when the user asks to "install best practice rules", "set up project rules", "add project rules and commands", "set up project conventions", or scaffold-project reaches the rules step. Installs the proven MACSTACK rule set (.claude/rules) and core commands into a project.
+- `@skill-discover-context` — This skill should be used when the user asks to "find plugins for this stack", "discover context for the project", "which plugins should I install", "find a prototype", "pick a stack prototype", or when init-project/generate-stack need context.plugins and prototype candidates. Searches Agents Store plugins and stackmakers-ai prototypes on GitHub.
+- `@skill-examples` — This skill should be used when the user asks for "macstack examples", "show a full macstack.json example", "how does a complete macstack.json look", "walk me through a macstack scenario", or needs an end-to-end scenario walkthrough for this plugin's skills.
+- `@skill-generate-stack` — This skill should be used when the user asks to "generate macstack.json from scratch", "design a stack for…", "pick software and architecture for my need", "create a stack spec from my request", or describes a business need without an existing codebase. Designs goals, results, processes, workflows, software and architecture result-first and produces a validated macstack.json.
+- `@skill-infisical-env` — This skill should be used when the user asks to "set up Infisical for this project", "create .infisical.json", "pull the env keys", "wire the env", "sync secrets", or scaffold-project reaches the env step. Creates .infisical.json, pulls .env.prod/.env.dev, ensures every key from macstack.json resources.accesses exists, and installs the mandatory secrets scripts and commands.
+- `@skill-init-project` — This skill should be used when the user asks to "create macstack.json in this project", "add macstack.json", "init macstack", "describe this existing project as macstack.json", or an existing codebase has no macstack.json. Audits the existing project and produces a validated macstack.json draft.
+- `@skill-lint` — This skill should be used when the user asks to "validate macstack.json", "lint macstack", "check the stack spec", "verify macstack.json integrity", or after any skill of this plugin writes/edits macstack.json. Validates against the bundled JSON Schema and the referential-integrity rules.
+- `@skill-scaffold-project` — This skill should be used when the user asks to "scaffold the project from macstack.json", "create the project working files", "generate project files from the spec", "build the project from macstack.json", or after a macstack.json is validated and the working tree must be built. Creates project files strictly in the prototype → stack plugins → dev plugins order.
+- `@skill-setup` — This skill should be used when the user asks "what is macstack.json", "set up macstack", "check macstack setup", "verify macstack.json", "explain the macstack standard", or before any other macstack-dev skill runs in a project for the first time. Explains the standard, locates the schema and category registry, and verifies tooling.
+- `@skill-troubleshoot` — This skill should be used when the user reports "macstack lint fails", "prototype does not resolve", "env keys missing", "scaffold broke my files", "cross-stack reference does not work", or any macstack-dev skill errors out. Diagnoses the common failure modes of the macstack.json toolchain.
+
+## Agents
+
+- `@macstack-architect` — Use this agent when the user needs to design or evolve a macstack.json — generate a stack from a business request, audit an existing project into a spec, choose software/architecture/prototype, or decompose goals into results, processes and workflows.
+
+<example>
+Context: User describes a business need without a codebase
+user: "Design a stack for an online school: payments, an LMS, email campaigns"
+assistant: "I'll use the macstack-architect agent to design the stack result-first."
+<commentary>
+Business request → goals/results → processes → software selection → macstack.json draft.
+</commentary>
+</example>
+
+<example>
+Context: Existing repo without a spec
+user: "Describe this project as a macstack.json"
+assistant: "I'll use the macstack-architect agent to audit the codebase and draft the spec."
+<commentary>
+Audit manifests/compose/.mcp.json → software/entities/workflows; ask the user only the business gaps.
+</commentary>
+</example>
+
+<example>
+Context: Ambiguous software choice
+user: "What should I pick for a CRM stack — NocoBase or Directus?"
+assistant: "I'll use the macstack-architect agent to compare against the requirements and recommend."
+<commentary>
+The decision needs the result-first framework and the Agentic IT Ready criteria.
+</commentary>
+</example>
+
+
+## Commands
+
+- `/generate` — Generate macstack.json from scratch — result-first stack design from a business request
+- `/init` — Create macstack.json in an existing project (audit codebase → validated spec)
+- `/lint` — Validate macstack.json against the JSON Schema and referential-integrity rules
+- `/scaffold` — Scaffold project files from macstack.json (prototype → stack plugins → dev plugins)
+- `/sync` — Update macstack.json and derived files after stack changes (spec = definition of done)
