@@ -10,6 +10,8 @@ permission:
 
 # PayloadCMS — Plugin Development
 
+The official `templates/plugin` starter in the payloadcms/payload repo is the canonical scaffold for `payload-plugin-*` packages — clone it to start with build config, dev app, and tests pre-wired.
+
 A Payload plugin is a curried function that takes user options and returns a config transformer:
 
 ```ts

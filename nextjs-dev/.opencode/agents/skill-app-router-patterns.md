@@ -1,5 +1,5 @@
 ---
-description: Next.js App Router patterns and file conventions. This skill should be used when the user asks about "Next.js routing", "App Router", "layouts and pages", "route groups", "parallel routes", "intercepting routes", "middleware", "metadata", "route handlers", or needs guidance on Next.js file-based routing architecture.
+description: Next.js App Router patterns and file conventions. This skill should be used when the user asks about "Next.js routing", "App Router", "layouts and pages", "route groups", "parallel routes", "intercepting routes", "proxy", "metadata", "route handlers", or needs guidance on Next.js file-based routing architecture.
 mode: subagent
 model: anthropic/claude-sonnet-4-5
 temperature: 0.2
@@ -24,7 +24,7 @@ Every route segment can define these special files:
 | `error.tsx` | Error boundary for this segment and children | No |
 | `not-found.tsx` | 404 UI when `notFound()` is called | No |
 | `template.tsx` | Like layout but remounts on navigation (new instance each time) | No |
-| `default.tsx` | Fallback for parallel routes when no match | No |
+| `default.tsx` | Fallback for parallel routes when no match | Yes (in every parallel route slot, since 16) |
 | `route.ts` | API endpoint (cannot coexist with `page.tsx` in same segment) | No |
 
 > For detailed error handling, loading state, and not-found patterns, see the `error-handling` skill. For Route Handler design patterns, see `api-design`.
@@ -109,7 +109,7 @@ export default async function Page({
 }
 ```
 
-In Next.js 15+, `params` is a Promise and must be awaited. This applies to `layout.tsx`, `page.tsx`, `route.ts`, and `generateMetadata`.
+`params`/`searchParams` are Promises (since Next.js 15); synchronous access was removed entirely in 16 — always `await` them. This applies to `layout.tsx`, `page.tsx`, `route.ts`, and `generateMetadata`. Next.js also generates helper types like `PageProps<'/blog/[slug]'>` — run `next typegen` to generate them without a full build.
 
 ## Parallel Routes
 
@@ -149,7 +149,7 @@ export default function DashboardLayout({
 }
 ```
 
-Provide `default.tsx` in each slot to handle cases where the slot has no matching route.
+Next.js 16 **requires** an explicit `default.tsx` in every slot — the build fails without it. Return `null` or call `notFound()` to reproduce the old fallback behavior.
 
 ## Intercepting Routes
 
@@ -164,15 +164,15 @@ Intercept a route from a different part of the app using convention prefixes:
 
 Common use case — modal pattern: clicking a photo in a feed opens a modal (intercepted), but navigating directly to `/photo/123` shows the full page.
 
-## Middleware
+## Proxy (proxy.ts)
 
-Define middleware in `middleware.ts` at the project root (same level as `app/`):
+Define the proxy in `proxy.ts` at the project root (same level as `app/`):
 
 ```ts
 import { NextResponse } from 'next/server'
 import type { NextRequest } from 'next/server'
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   // Redirect, rewrite, or modify headers
   if (!request.cookies.has('session')) {
     return NextResponse.redirect(new URL('/login', request.url))
@@ -185,7 +185,9 @@ export const config = {
 }
 ```
 
-Middleware runs before every matched request. Use it for authentication, redirects, internationalization, and A/B testing. Keep middleware lightweight — it runs on every matched request.
+`proxy` can be a named or default export; the `NextResponse` redirect/rewrite/headers API and `export const config = { matcher: [...] }` are unchanged from middleware. Proxy runs on the Node.js runtime (no `runtime` option). Use it for authentication, redirects, internationalization, and A/B testing. Keep it lightweight — it runs on every matched request.
+
+> `middleware.ts` is deprecated since Next.js 16 (it still works for Edge cases but will be removed in a future major). Migrate with `npx @next/codemod@canary middleware-to-proxy .`.
 
 ## Metadata API
 
