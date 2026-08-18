@@ -1,6 +1,5 @@
 ---
 description: Quick health check of OpenClaw instance — scans all categories (A–J), checks sizes, detects inline secrets, identifies missing components, verifies language
-argument-hint: '[quick|full|security]'
 ---
 
 # Workspace Scan

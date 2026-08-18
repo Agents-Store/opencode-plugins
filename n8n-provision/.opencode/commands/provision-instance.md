@@ -1,6 +1,5 @@
 ---
 description: Run a full instance provisioning session with multiple workflows
-argument-hint: '[--preset <startup|devops|marketing|custom>] [--dry-run]'
 ---
 
 # Provision Instance

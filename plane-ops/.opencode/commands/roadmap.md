@@ -1,6 +1,5 @@
 ---
 description: Generate a Now / Next / Later roadmap view across cycles, modules, epics
-argument-hint: <project> [--horizon <weeks>]
 ---
 
 # Roadmap

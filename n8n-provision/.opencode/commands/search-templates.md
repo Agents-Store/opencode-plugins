@@ -1,6 +1,5 @@
 ---
 description: Search the official n8n template library for ready-made workflows
-argument-hint: <query> [--category <name>] [--nodes <nodeTypes>] [--mode <keyword|by_nodes|by_task>]
 ---
 
 # Search Templates

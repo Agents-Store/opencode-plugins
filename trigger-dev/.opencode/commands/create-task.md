@@ -1,6 +1,5 @@
 ---
 description: Create a new Trigger.dev task file
-argument-hint: <task-name> [--type basic|schema|cron|agent]
 ---
 
 # Create Task

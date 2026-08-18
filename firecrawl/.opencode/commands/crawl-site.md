@@ -1,6 +1,5 @@
 ---
 description: Crawl a website
-argument-hint: <url> [--max-pages <n>] [--include <pattern>]
 ---
 
 # Crawl Site

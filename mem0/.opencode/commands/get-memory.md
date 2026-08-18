@@ -1,6 +1,5 @@
 ---
 description: Get a specific memory by its ID
-argument-hint: <memory_id>
 ---
 
 # Get Memory

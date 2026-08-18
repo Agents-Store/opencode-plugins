@@ -1,6 +1,5 @@
 ---
 description: Build an aggregation report from NocoDB table data
-argument-hint: <table-name> [aggregation-type] [field]
 ---
 
 # Build Report

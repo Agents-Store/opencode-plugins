@@ -1,6 +1,5 @@
 ---
 description: Create a new NocoDB table with optional initial fields
-argument-hint: '[base-name-or-id] [table-title]'
 ---
 
 # Create NocoDB Table

@@ -29,13 +29,13 @@ description: |
   </commentary>
   </example>
 mode: subagent
-model: anthropic/claude-sonnet-4-5
+model: anthropic/claude-sonnet-5
 temperature: 0.2
-permission:
-  edit: allow
-  bash: allow
 tools:
-  - nocodb__*, Bash, Read, Write
+  nocodb_*: true
+  bash: true
+  read: true
+  write: true
 ---
 
 You are a NocoDB schema architect. You design and apply schema changes — tables, fields, views, relations, webhooks — and you verify every change before declaring it done.

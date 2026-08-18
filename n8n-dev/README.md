@@ -4,15 +4,13 @@ n8n workflow automation dev plugin for Agents Store. MCP tools guide (external +
 
 ## Install
 
-Project-scoped: copy contents into your project.
+Copy this directory's contents into your project (or `~/.config/opencode/` for a global install):
 
 ```bash
-cp opencode.json /path/to/your-project/
-cp AGENTS.md /path/to/your-project/
-cp -r .opencode /path/to/your-project/
+cp -r .opencode opencode.json AGENTS.md /path/to/your-project/
 ```
 
-User-global: copy `.opencode/agents/` and `.opencode/commands/` into `~/.config/opencode/`.
+Skills under `.opencode/skills/` are discovered natively by OpenCode (native skill support, Feb 2026) — no manual registration needed.
 
 ## Source
 

@@ -1,6 +1,5 @@
 ---
 description: Create and deploy a database in a Dokploy project
-argument-hint: <name> --project <project> --type <postgres|mysql|mariadb|mongo|redis|libsql> [--password <pass>]
 ---
 
 # Create Database

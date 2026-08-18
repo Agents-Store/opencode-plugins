@@ -2,28 +2,25 @@
   "$schema": "https://opencode.ai/config.json",
   "mcp": {
     "directus": {
-      "enabled": true,
       "type": "remote",
       "url": "{env:NEXT_PUBLIC_DIRECTUS_URL}/mcp",
       "headers": {
         "Authorization": "Bearer {env:DIRECTUS_ADMIN_TOKEN}"
-      }
+      },
+      "enabled": true
     },
     "trigger-dev": {
-      "enabled": true,
       "type": "local",
-      "command": "npx",
-      "args": [
+      "command": [
+        "npx",
         "trigger.dev@latest",
         "mcp"
       ],
-      "env": {
+      "environment": {
         "TRIGGER_ACCESS_TOKEN": "{env:TRIGGER_SECRET_KEY}",
         "TRIGGER_API_URL": "{env:TRIGGER_API_URL}"
-      }
+      },
+      "enabled": true
     }
-  },
-  "instructions": [
-    "AGENTS.md"
-  ]
+  }
 }

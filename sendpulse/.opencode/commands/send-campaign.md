@@ -1,6 +1,5 @@
 ---
 description: Send a chatbot campaign on a specific channel
-argument-hint: <channel> <bot-id> [message]
 ---
 
 # Send Campaign

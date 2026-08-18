@@ -1,7 +1,5 @@
 ---
 description: List all NocoBase collections
-argument-hint:
-  - '--details'
 ---
 
 # List Collections

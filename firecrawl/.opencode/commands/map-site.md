@@ -1,6 +1,5 @@
 ---
 description: Map a site's URL structure
-argument-hint: <url>
 ---
 
 # Map Site

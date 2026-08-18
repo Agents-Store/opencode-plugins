@@ -1,6 +1,5 @@
 ---
 description: Generate daily standup summary for current sprint
-argument-hint: <project>
 ---
 
 # Standup

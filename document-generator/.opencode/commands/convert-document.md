@@ -1,6 +1,5 @@
 ---
 description: Convert between document formats (MD/DOCX/PDF/HTML/PPTX)
-argument-hint: <input-file> --to <format>
 ---
 
 # Convert Document

@@ -1,6 +1,5 @@
 ---
 description: Search attached files via vector search
-argument-hint: '"<query>" --user <user_id> [--file <filename>] [--limit <n>]'
 ---
 
 # Search Files

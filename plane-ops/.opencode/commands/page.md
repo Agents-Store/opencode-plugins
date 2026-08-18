@@ -1,6 +1,5 @@
 ---
 description: Create, list, get, or update a Plane page (project or workspace scope)
-argument-hint: <action> [scope] [project] [args...]
 ---
 
 # Page

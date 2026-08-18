@@ -1,6 +1,5 @@
 ---
 description: Guided discovery session to understand goals, users, tasks, and success criteria for OpenClaw workspace customization
-argument-hint: '[new|existing]'
 ---
 
 # Workspace Interview

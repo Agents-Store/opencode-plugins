@@ -15,18 +15,15 @@ description: |
   user: "Check my workspace for security issues"
   </example>
 mode: subagent
-model: anthropic/claude-sonnet-4-5
+model: anthropic/claude-sonnet-5
 temperature: 0.2
-permission:
-  edit: allow
-  bash: allow
 tools:
-  - Read
-  - Bash
-  - Glob
-  - Grep
-  - WebFetch
-  - WebSearch
+  read: true
+  bash: true
+  glob: true
+  grep: true
+  webfetch: true
+  websearch: true
 ---
 
 # OpenClaw Workspace Auditor

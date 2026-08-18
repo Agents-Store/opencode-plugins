@@ -2,62 +2,59 @@
   "$schema": "https://opencode.ai/config.json",
   "mcp": {
     "firecrawl": {
-      "enabled": true,
       "type": "local",
-      "command": "npx",
-      "args": [
+      "command": [
+        "npx",
         "-y",
         "firecrawl-mcp"
       ],
-      "env": {
+      "environment": {
         "FIRECRAWL_API_KEY": "{env:FIRECRAWL_API_TOKEN}"
-      }
+      },
+      "enabled": true
     },
     "exa": {
-      "enabled": true,
       "type": "local",
-      "command": "npx",
-      "args": [
+      "command": [
+        "npx",
         "-y",
         "exa-mcp-server"
       ],
-      "env": {
+      "environment": {
         "EXA_API_KEY": "{env:EXA_API_KEY}"
-      }
+      },
+      "enabled": true
     },
     "perplexity": {
-      "enabled": true,
       "type": "local",
-      "command": "npx",
-      "args": [
+      "command": [
+        "npx",
         "-y",
         "@perplexity-ai/mcp-server"
       ],
-      "env": {
+      "environment": {
         "PERPLEXITY_API_KEY": "{env:PERPLEXITY_API_KEY}"
-      }
+      },
+      "enabled": true
     },
     "jina": {
-      "enabled": true,
       "type": "remote",
       "url": "https://mcp.jina.ai/v1",
       "headers": {
         "Authorization": "Bearer {env:JINA_API_KEY}"
-      }
+      },
+      "enabled": true
     },
     "context7": {
-      "enabled": true,
       "type": "local",
-      "command": "npx",
-      "args": [
+      "command": [
+        "npx",
         "-y",
         "@upstash/context7-mcp",
         "--api-key",
         "${CONTEXT7_API_KEY}"
-      ]
+      ],
+      "enabled": true
     }
-  },
-  "instructions": [
-    "AGENTS.md"
-  ]
+  }
 }

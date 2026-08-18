@@ -1,6 +1,5 @@
 ---
 description: Show sprint burndown and projected completion for the active cycle
-argument-hint: <project> [--cycle <current|name>]
 ---
 
 # Burndown

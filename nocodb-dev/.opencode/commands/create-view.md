@@ -1,6 +1,5 @@
 ---
 description: Create a Grid / Form / Gallery / Kanban / Calendar / Map view
-argument-hint: '[table-name-or-id] [view-type] [view-title]'
 ---
 
 # Create NocoDB View

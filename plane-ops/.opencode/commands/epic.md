@@ -1,6 +1,5 @@
 ---
 description: Manage Plane epics — list, get, update, delete (complement to /create-epic)
-argument-hint: <action> <project> [args...]
 ---
 
 # Epic

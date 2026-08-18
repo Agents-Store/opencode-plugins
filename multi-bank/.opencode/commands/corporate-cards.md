@@ -1,7 +1,5 @@
 ---
 description: List corporate cards with balances and status
-argument-hint:
-  - open|closed|all
 ---
 
 # Corporate Cards

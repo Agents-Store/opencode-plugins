@@ -29,18 +29,15 @@ description: |
   </commentary>
   </example>
 mode: subagent
-model: anthropic/claude-sonnet-4-5
+model: anthropic/claude-sonnet-5
 temperature: 0.2
-permission:
-  edit: allow
-  bash: allow
 tools:
-  - Read
-  - Write
-  - Edit
-  - Grep
-  - Glob
-  - Bash
+  read: true
+  write: true
+  edit: true
+  grep: true
+  glob: true
+  bash: true
 ---
 
 You are an n8n workflow automation development specialist. You help developers build, debug, and optimize n8n workflows using MCP tools, the REST API, and CLI commands.

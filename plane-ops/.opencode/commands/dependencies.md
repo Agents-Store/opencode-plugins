@@ -1,6 +1,5 @@
 ---
 description: Show dependency graph and active blockers for a project or sprint
-argument-hint: <project> [--cycle <current|next|name>]
 ---
 
 # Dependencies

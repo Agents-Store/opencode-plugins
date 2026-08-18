@@ -1,6 +1,5 @@
 ---
 description: Create a record in a NocoBase collection
-argument-hint: <collection> <field1=value1> [field2=value2] ...
 ---
 
 # Create Record

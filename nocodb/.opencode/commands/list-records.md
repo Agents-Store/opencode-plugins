@@ -1,6 +1,5 @@
 ---
 description: List records from a NocoDB table with optional filters
-argument-hint: <table> [--where <filter>] [--sort <field>] [--limit <n>]
 ---
 
 # List Records

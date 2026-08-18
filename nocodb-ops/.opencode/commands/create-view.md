@@ -1,6 +1,5 @@
 ---
 description: Create a new view for a NocoDB table
-argument-hint: <table-name> <view-type> [title]
 ---
 
 # Create View

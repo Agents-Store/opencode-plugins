@@ -1,6 +1,5 @@
 ---
 description: Generate a contract or agreement (DOCX/PDF)
-argument-hint: <title> [--format <docx|pdf>] [--type <service|nda|employment>]
 ---
 
 # Generate Contract

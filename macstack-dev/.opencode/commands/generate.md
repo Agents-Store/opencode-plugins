@@ -1,6 +1,5 @@
 ---
 description: Generate macstack.json from scratch — result-first stack design from a business request
-argument-hint: <business request>
 ---
 
 Use the macstack-dev:generate-stack skill (delegate design to the macstack-architect

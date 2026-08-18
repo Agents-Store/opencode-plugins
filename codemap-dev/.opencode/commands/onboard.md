@@ -1,6 +1,5 @@
 ---
 description: Generate a full onboarding report — README summary, stack, folder structure, entry points, how to run locally, and 3 main diagrams (architecture, main flow, DB)
-argument-hint: (no arguments — analyzes current project)
 ---
 
 # Onboard to Current Project
@@ -10,7 +9,7 @@ Generate a comprehensive onboarding package for a developer joining this project
 ## Instructions
 
 1. Read the primary skill:
-   - `${CLAUDE_PLUGIN_ROOT}/skills/codemap-explain/SKILL.md` — explanation methodology
+   - `./skills/codemap-explain/SKILL.md` — explanation methodology
 
 2. Ensure output directories exist: `docs/codemap/diagrams/` — create if missing.
 

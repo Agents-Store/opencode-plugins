@@ -1,6 +1,5 @@
 ---
 description: Browse electronic documents (EDO) — inbox, outbox, all documents
-argument-hint: <inbox|outbox|all> [date-range]
 ---
 
 # Electronic Document Journal

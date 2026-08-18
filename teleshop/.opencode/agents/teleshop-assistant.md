@@ -1,13 +1,10 @@
 ---
 description: Interactive Teleshop store management assistant. Helps merchants manage products, orders, categories, attributes, customers, webhooks, and addons for their Telegram store.
 mode: subagent
-model: anthropic/claude-sonnet-4-5
+model: anthropic/claude-sonnet-5
 temperature: 0.2
-permission:
-  edit: allow
-  bash: allow
 tools:
-  - teleshop__*
+  teleshop_*: true
 ---
 
 # Teleshop Assistant

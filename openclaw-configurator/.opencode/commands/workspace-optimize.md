@@ -1,6 +1,5 @@
 ---
 description: Optimize a specific OpenClaw workspace file or all files at once, with security checks and optional openclaw.json editing
-argument-hint: <soul|agents|user|tools|heartbeat|identity|memory|bootstrap|boot|config|all>
 ---
 
 # Workspace Optimize

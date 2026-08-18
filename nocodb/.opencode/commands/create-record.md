@@ -1,6 +1,5 @@
 ---
 description: Create a new record in a NocoDB table
-argument-hint: <table> [--data <field1=value1,field2=value2>]
 ---
 
 # Create Record

@@ -1,6 +1,5 @@
 ---
 description: Search across 260+ shadcn registries for UI components, blocks, and templates
-argument-hint: <what-you-need>
 ---
 
 # Search Components
@@ -9,8 +8,8 @@ Search for shadcn-compatible components across the 260+ registries in the offici
 
 ## Instructions
 
-1. Read the skill at `${CLAUDE_PLUGIN_ROOT}/skills/component-search/SKILL.md`
-2. Read the registry reference at `${CLAUDE_PLUGIN_ROOT}/skills/component-search/references/community-registries.md`
+1. Read the skill at `./skills/component-search/SKILL.md`
+2. Read the registry reference at `./skills/component-search/references/community-registries.md`
 3. Parse the user's search query from "$ARGUMENTS" (e.g., "animated button", "date range picker", "chat component", "pricing section")
 4. Identify the most relevant category: animation, extended UI, blocks, e-commerce, AI, file upload, other
 5. Present matching registries and components with install commands:

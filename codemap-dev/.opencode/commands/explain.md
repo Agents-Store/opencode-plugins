@@ -1,6 +1,5 @@
 ---
 description: Step-by-step explanation of a file, function, or module with mini-diagram if appropriate
-argument-hint: <file-path|module-path|symbol-name>
 ---
 
 # Explain Code for Beginners
@@ -10,7 +9,7 @@ Provide a structured, beginner-friendly explanation. Target: $ARGUMENTS
 ## Instructions
 
 1. Read the primary skill:
-   - `${CLAUDE_PLUGIN_ROOT}/skills/codemap-explain/SKILL.md` — 4-layer explanation model
+   - `./skills/codemap-explain/SKILL.md` — 4-layer explanation model
 
 2. Parse `$ARGUMENTS` to determine scope:
    - If it's a file path → pass the file path to the agent

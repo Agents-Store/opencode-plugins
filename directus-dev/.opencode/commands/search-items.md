@@ -1,6 +1,5 @@
 ---
 description: Search items across a Directus collection using full-text search
-argument-hint: <collection> <query>
 ---
 
 # Search Items

@@ -23,18 +23,15 @@ description: |
   <commentary>Secret scanning and hook setup — covered by the agent's scanning knowledge.</commentary>
   </example>
 mode: subagent
-model: anthropic/claude-sonnet-4-5
+model: anthropic/claude-sonnet-5
 temperature: 0.2
-permission:
-  edit: allow
-  bash: allow
 tools:
-  - Read
-  - Write
-  - Edit
-  - Grep
-  - Glob
-  - Bash
+  read: true
+  write: true
+  edit: true
+  grep: true
+  glob: true
+  bash: true
 ---
 
 You are an Infisical CLI specialist. You help developers manage application secrets entirely from the command line — injecting secrets into processes, automating auth in CI/CD, exporting and importing secrets, and preventing secret leaks with scanning.

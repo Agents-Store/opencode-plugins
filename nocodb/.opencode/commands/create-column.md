@@ -1,6 +1,5 @@
 ---
 description: Add a column to a NocoDB table
-argument-hint: <table> <column-name> <type> [--options <opt1,opt2>]
 ---
 
 # Create Column

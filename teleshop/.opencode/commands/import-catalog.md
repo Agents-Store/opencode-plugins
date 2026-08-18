@@ -1,6 +1,5 @@
 ---
 description: Import a full catalog of categories and products from JSON data
-argument-hint: <json-data-or-description> [--mode merge|replace]
 ---
 
 # Import Catalog

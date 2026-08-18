@@ -1,7 +1,5 @@
 ---
 description: Set up community shadcn registries, MCP servers, and CLAUDE.md section for a project
-argument-hint:
-  - '--mcp | --claudemd | --skill'
 ---
 
 # Setup Registries
@@ -10,7 +8,7 @@ Full project setup for shadcn community registry search — registries, MCP, CLA
 
 ## Instructions
 
-1. Read the skill at `${CLAUDE_PLUGIN_ROOT}/skills/component-search/SKILL.md`
+1. Read the skill at `./skills/component-search/SKILL.md`
 
 2. Verify `components.json` exists in the project root. If not:
    - Ask the user if they want to initialize shadcn/ui first
@@ -36,13 +34,13 @@ Full project setup for shadcn community registry search — registries, MCP, CLA
    ```
    For premium, convert entries to objects with `"params": { "email": "${EMAIL}", "license_key": "${LICENSE_KEY}" }`.
 
-5. **Configure MCP servers** — Show the template from `${CLAUDE_PLUGIN_ROOT}/skills/component-search/references/mcp-config-template.json` and create/update the project's `.mcp.json`
+5. **Configure MCP servers** — Show the template from `./skills/component-search/references/mcp-config-template.json` and create/update the project's `.mcp.json`
 
 6. **Install the official shadcn skill**:
    ```bash
    pnpm dlx skills add shadcn/ui
    ```
 
-7. **Add CLAUDE.md section** — Append the content from `${CLAUDE_PLUGIN_ROOT}/skills/component-search/references/claude-md-section.md` to the project's CLAUDE.md
+7. **Add CLAUDE.md section** — Append the content from `./skills/component-search/references/claude-md-section.md` to the project's CLAUDE.md
 
 8. Test by installing one component from a community registry to verify it works

@@ -12,13 +12,10 @@ description: |
   user: "Audit and clean up outdated memories"
   </example>
 mode: subagent
-model: anthropic/claude-sonnet-4-5
+model: anthropic/claude-sonnet-5
 temperature: 0.2
-permission:
-  edit: allow
-  bash: allow
 tools:
-  - mem0__*
+  mem0_*: true
 ---
 
 # Mem0 Knowledge Manager

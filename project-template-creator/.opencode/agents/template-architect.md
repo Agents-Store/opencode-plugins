@@ -40,15 +40,12 @@ description: |
   </commentary>
   </example>
 mode: subagent
-model: anthropic/claude-sonnet-4-5
+model: anthropic/claude-sonnet-5
 temperature: 0.2
-permission:
-  edit: allow
-  bash: allow
 tools:
-  - Read
-  - Grep
-  - Glob
+  read: true
+  grep: true
+  glob: true
 ---
 
 You are an expert template architect for the STACKMAKERS project template hierarchy. You help users decide where improvements belong in the 4-level template system and plan new template structures.

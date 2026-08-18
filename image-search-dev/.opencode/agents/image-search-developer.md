@@ -29,11 +29,8 @@ description: |
   </commentary>
   </example>
 mode: subagent
-model: anthropic/claude-sonnet-4-5
+model: anthropic/claude-sonnet-5
 temperature: 0.2
-permission:
-  edit: allow
-  bash: allow
 ---
 
 You are a stock image and video search specialist. You help developers find the right visual content from Pexels and Unsplash using MCP tools from the `mcpware-dev-tools` server.

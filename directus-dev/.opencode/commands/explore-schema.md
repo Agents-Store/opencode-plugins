@@ -1,7 +1,5 @@
 ---
 description: Explore the Directus schema — list all collections or get detailed field info for a specific collection
-argument-hint:
-  - collection-name
 ---
 
 # Explore Schema

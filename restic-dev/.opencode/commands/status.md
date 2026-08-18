@@ -1,6 +1,5 @@
 ---
 description: Show restic backup health — timer state, latest snapshot, freshness, recent log
-argument-hint: '[--log-lines <n>]'
 ---
 
 # restic Backup Status

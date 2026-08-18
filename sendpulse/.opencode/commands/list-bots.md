@@ -1,7 +1,5 @@
 ---
 description: List all connected chatbots with their channels and statistics
-argument-hint:
-  - '--stats'
 ---
 
 # List Bots

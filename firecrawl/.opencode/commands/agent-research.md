@@ -1,6 +1,5 @@
 ---
 description: Start an autonomous web research agent
-argument-hint: <research-prompt> [--urls <url1,url2>]
 ---
 
 # Agent Research

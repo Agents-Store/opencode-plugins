@@ -1,6 +1,5 @@
 ---
 description: Bulk update records in a NocoDB table
-argument-hint: <table-name> --where <filter> --set <field=value>
 ---
 
 # Bulk Update

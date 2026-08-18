@@ -4,23 +4,25 @@
 
 Canonical: https://github.com/agents-store/claude-public-plugins/tree/main/plugins/nocodb-ops
 
-## Skills (exposed as subagents)
+## Skills
 
-- `@skill-cli-reference` — NocoDB CLI commands and nc command reference from the official NocoDB agent-skills package. Use when:
+Automatically discovered by OpenCode from `.opencode/skills/` (native skill support, Feb 2026) — loaded on demand from their descriptions below, no manual invocation needed:
+
+- **cli-reference** — NocoDB CLI commands and nc command reference from the official NocoDB agent-skills package. Use when:
 - "NocoDB CLI commands"
 - "nc command reference"
 - "NocoDB agent-skills"
 - "what CLI commands are available"
 - "how to use nc command"
 
-- `@skill-examples` — NocoDB workflow examples, scenario walkthroughs, and practical patterns. Use when:
+- **examples** — NocoDB workflow examples, scenario walkthroughs, and practical patterns. Use when:
 - "show me a NocoDB example"
 - "workflow examples"
 - "scenario walkthroughs"
 - "how do I use NocoDB for..."
 - "NocoDB use case"
 
-- `@skill-import-export` — Import data into NocoDB tables and export records out. Use when:
+- **import-export** — Import data into NocoDB tables and export records out. Use when:
 - "import CSV into NocoDB"
 - "load data into this table"
 - "bulk create records"
@@ -30,14 +32,14 @@ Canonical: https://github.com/agents-store/claude-public-plugins/tree/main/plugi
 - "extract all records"
 - "download table data"
 
-- `@skill-mcp-patterns` — NocoDB MCP tools reference -- available tools, parameters, and usage patterns. Use when:
+- **mcp-patterns** — NocoDB MCP tools reference -- available tools, parameters, and usage patterns. Use when:
 - "what NocoDB tools are available?"
 - "how do I query records?"
 - "show me NocoDB MCP parameters"
 - "which tool do I use for..."
 - "NocoDB tool reference"
 
-- `@skill-record-management` — Create, read, update, and delete NocoDB records. Use when:
+- **record-management** — Create, read, update, and delete NocoDB records. Use when:
 - "add a new record"
 - "create entries in NocoDB"
 - "update a record"
@@ -46,7 +48,7 @@ Canonical: https://github.com/agents-store/claude-public-plugins/tree/main/plugi
 - "search and edit records"
 - "how many records match..."
 
-- `@skill-search-filter` — NocoDB filter syntax reference for searching, filtering, and sorting records. Use when:
+- **search-filter** — NocoDB filter syntax reference for searching, filtering, and sorting records. Use when:
 - "filter records"
 - "search for records where"
 - "NocoDB where clause"
@@ -58,14 +60,14 @@ Canonical: https://github.com/agents-store/claude-public-plugins/tree/main/plugi
 - "records created this week"
 - "combine multiple filters"
 
-- `@skill-setup` — Verify NocoDB connection and MCP setup. Use when:
+- **setup** — Verify NocoDB connection and MCP setup. Use when:
 - "check my NocoDB connection"
 - "verify MCP is working"
 - "test NocoDB setup"
 - "is NocoDB connected?"
 - "troubleshoot NocoDB access"
 
-- `@skill-troubleshoot` — Diagnose and fix NocoDB errors, connection issues, and MCP problems. Use when:
+- **troubleshoot** — Diagnose and fix NocoDB errors, connection issues, and MCP problems. Use when:
 - "NocoDB not working"
 - "connection error"
 - "getting 401 error"
@@ -74,7 +76,7 @@ Canonical: https://github.com/agents-store/claude-public-plugins/tree/main/plugi
 - "filter not working"
 - "timeout error"
 
-- `@skill-views-and-reports` — Build reports, summaries, and dashboards from NocoDB data. Use when:
+- **views-and-reports** — Build reports, summaries, and dashboards from NocoDB data. Use when:
 - "create a report"
 - "summarize this table"
 - "show sales by region"

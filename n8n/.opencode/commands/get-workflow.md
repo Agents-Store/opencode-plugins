@@ -1,6 +1,5 @@
 ---
 description: Get n8n workflow details
-argument-hint: <workflow-id>
 ---
 
 # Get Workflow

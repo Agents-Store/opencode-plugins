@@ -1,6 +1,5 @@
 ---
 description: Create a new view for a NocoDB table
-argument-hint: <table> <view-name> <type> [--group-by <field>]
 ---
 
 # Create View

@@ -1,6 +1,5 @@
 ---
 description: Generate a specific diagram — architecture, flow, db, sequence, deps
-argument-hint: '<type> [scope] — types: architecture, flow <feature>, db, sequence <endpoint>, deps <module>'
 ---
 
 # Generate Diagram
@@ -10,7 +9,7 @@ Create a visual diagram for the specified aspect of the codebase. Request: $ARGU
 ## Instructions
 
 1. Read the primary skill:
-   - `${CLAUDE_PLUGIN_ROOT}/skills/codemap-diagram/SKILL.md` — diagram generation rules and types
+   - `./skills/codemap-diagram/SKILL.md` — diagram generation rules and types
 
 2. Parse `$ARGUMENTS` for diagram type and optional scope:
    - `architecture` → C4 container diagram of the entire system

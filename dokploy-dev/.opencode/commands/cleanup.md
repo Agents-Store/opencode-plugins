@@ -1,7 +1,5 @@
 ---
 description: Reclaim disk space on the Dokploy server with a guided cleanup chain
-argument-hint:
-  - '--dry-run'
 ---
 
 # Dokploy Server Cleanup

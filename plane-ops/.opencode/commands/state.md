@@ -1,6 +1,5 @@
 ---
 description: Manage Plane workflow states — list, create, update, delete, reorder
-argument-hint: <action> <project> [args...]
 ---
 
 # State

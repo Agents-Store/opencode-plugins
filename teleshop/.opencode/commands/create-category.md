@@ -1,6 +1,5 @@
 ---
 description: Create a new product category
-argument-hint: <title> [--parent <id>] [--orderBy cheap|expensive|novelty|popular]
 ---
 
 # Create Category

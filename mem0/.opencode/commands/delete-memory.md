@@ -1,6 +1,5 @@
 ---
 description: Delete a memory by its ID
-argument-hint: <memory_id>
 ---
 
 # Delete Memory

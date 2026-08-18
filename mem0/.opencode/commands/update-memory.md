@@ -1,6 +1,5 @@
 ---
 description: Update an existing memory's content
-argument-hint: <memory_id> "<new content>"
 ---
 
 # Update Memory

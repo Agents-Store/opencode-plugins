@@ -1,6 +1,5 @@
 ---
 description: Show current sprint status — progress, burndown, at-risk items
-argument-hint: <project>
 ---
 
 # Sprint Status

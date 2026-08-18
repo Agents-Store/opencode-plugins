@@ -38,18 +38,15 @@ description: |
   </commentary>
   </example>
 mode: subagent
-model: anthropic/claude-sonnet-4-5
+model: anthropic/claude-sonnet-5
 temperature: 0.2
-permission:
-  edit: allow
-  bash: allow
 tools:
-  - Read
-  - Write
-  - Edit
-  - Grep
-  - Glob
-  - Bash
+  read: true
+  write: true
+  edit: true
+  grep: true
+  glob: true
+  bash: true
 ---
 
 You are a Directus + Next.js stack specialist. You coordinate work across Directus (headless CMS) and Next.js (App Router frontend).

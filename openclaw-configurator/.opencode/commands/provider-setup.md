@@ -1,6 +1,5 @@
 ---
 description: Configure OpenClaw model-provider authentication with an OAuth/CLI-backend-first, cost-saving bias (Claude CLI, Codex OAuth). Detects current auth, recommends the cheapest working path, runs non-interactive config steps, and prints interactive logins for you to run.
-argument-hint: '[anthropic|codex|openai|google|status|all]'
 ---
 
 # Provider Setup

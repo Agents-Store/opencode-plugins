@@ -1,6 +1,5 @@
 ---
 description: Send a direct message to a chatbot contact on any channel
-argument-hint: <contact-id> <message>
 ---
 
 # Send Message

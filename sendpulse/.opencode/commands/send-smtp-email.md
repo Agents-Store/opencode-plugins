@@ -1,6 +1,5 @@
 ---
 description: Send a transactional email via SMTP
-argument-hint: <to-email> <subject> <body>
 ---
 
 # Send SMTP Email

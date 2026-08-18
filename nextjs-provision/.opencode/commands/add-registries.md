@@ -1,7 +1,5 @@
 ---
 description: Fetch all 260+ shadcn registries from the official endpoint and add them to components.json
-argument-hint:
-  - '--filter <keyword>'
 ---
 
 # Add Registries

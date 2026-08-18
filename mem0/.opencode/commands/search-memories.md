@@ -1,6 +1,5 @@
 ---
 description: Search memories by semantic query
-argument-hint: '"<query>" [--user <user_id>] [--limit <n>]'
 ---
 
 # Search Memories

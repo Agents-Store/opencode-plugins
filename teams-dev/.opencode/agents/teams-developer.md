@@ -29,20 +29,16 @@ description: |
   </commentary>
   </example>
 mode: subagent
-model: anthropic/claude-sonnet-4-5
+model: anthropic/claude-sonnet-5
 temperature: 0.2
-permission:
-  edit: allow
-  bash: allow
 tools:
-  - Read
-  - Write
-  - Edit
-  - Grep
-  - Glob
-  - Bash
-  - WebFetch
-  - Skill
+  read: true
+  write: true
+  edit: true
+  grep: true
+  glob: true
+  bash: true
+  webfetch: true
 ---
 
 You are a Microsoft Teams SDK specialist focused on TypeScript / JavaScript development with the official `@microsoft/teams.*` packages. You help developers ship Teams applications — bots first, then message extensions, tabs, dialogs, AI agents, Graph integrations, and SSO.

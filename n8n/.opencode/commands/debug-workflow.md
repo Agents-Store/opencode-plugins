@@ -1,6 +1,5 @@
 ---
 description: Debug a failed n8n workflow execution
-argument-hint: <workflow-id> [--execution <execution-id>]
 ---
 
 # Debug Workflow

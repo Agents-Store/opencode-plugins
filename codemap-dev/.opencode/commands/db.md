@@ -1,6 +1,5 @@
 ---
 description: Parse models, migrations, or schema and generate an ERD diagram + DB documentation
-argument-hint: (no arguments — auto-detects models)
 ---
 
 # Database Schema ERD
@@ -10,8 +9,8 @@ Analyze the database schema and generate an Entity-Relationship Diagram + docume
 ## Instructions
 
 1. Read the primary skill:
-   - `${CLAUDE_PLUGIN_ROOT}/skills/codemap-diagram/SKILL.md` — ERD generation rules
-2. Read ERD-specific guidance from `${CLAUDE_PLUGIN_ROOT}/skills/codemap-diagram/references/diagram-types.md`
+   - `./skills/codemap-diagram/SKILL.md` — ERD generation rules
+2. Read ERD-specific guidance from `./skills/codemap-diagram/references/diagram-types.md`
 
 3. Ensure output directories exist: `docs/codemap/diagrams/` — create if missing.
 

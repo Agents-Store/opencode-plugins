@@ -1,6 +1,5 @@
 ---
 description: Create a new item in a Directus collection
-argument-hint: <collection> <field=value> [field=value...]
 ---
 
 # Create Item

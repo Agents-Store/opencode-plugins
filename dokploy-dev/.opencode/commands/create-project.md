@@ -1,6 +1,5 @@
 ---
 description: Create a new Dokploy project
-argument-hint: <name> [--description <text>]
 ---
 
 # Create Project

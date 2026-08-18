@@ -1,6 +1,5 @@
 ---
 description: Triage the Plane intake inbox — accept, defer, or reject incoming items
-argument-hint: <project> [--limit <n>]
 ---
 
 # Triage Intake

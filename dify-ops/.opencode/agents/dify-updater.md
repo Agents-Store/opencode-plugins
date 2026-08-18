@@ -49,18 +49,15 @@ description: |
   </commentary>
   </example>
 mode: subagent
-model: anthropic/claude-sonnet-4-5
+model: anthropic/claude-sonnet-5
 temperature: 0.2
-permission:
-  edit: allow
-  bash: allow
 tools:
-  - Read
-  - Write
-  - Edit
-  - Bash
-  - Glob
-  - Grep
+  read: true
+  write: true
+  edit: true
+  bash: true
+  glob: true
+  grep: true
 ---
 
 You are a Dify self-hosted deployment specialist. You help users update their Dify instances safely and correctly.

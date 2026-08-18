@@ -1,6 +1,5 @@
 ---
 description: Review a file, directory, or PR diff in beginner-friendly mode — structured feedback with "why" explanations
-argument-hint: <file-path|directory|PR#>
 ---
 
 # Beginner-Friendly Code Review
@@ -10,7 +9,7 @@ Review code with educational explanations. Target: $ARGUMENTS
 ## Instructions
 
 1. Read the primary skill:
-   - `${CLAUDE_PLUGIN_ROOT}/skills/codemap-review/SKILL.md` — review methodology and output format
+   - `./skills/codemap-review/SKILL.md` — review methodology and output format
 
 2. Parse `$ARGUMENTS` to determine what to review:
    - If it's a file path → pass the file path to the agent

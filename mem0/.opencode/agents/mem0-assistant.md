@@ -12,13 +12,10 @@ description: |
   user: "Show me the history of changes for this memory"
   </example>
 mode: subagent
-model: anthropic/claude-sonnet-4-5
+model: anthropic/claude-sonnet-5
 temperature: 0.2
-permission:
-  edit: allow
-  bash: allow
 tools:
-  - mem0__*
+  mem0_*: true
 ---
 
 # Mem0 Assistant

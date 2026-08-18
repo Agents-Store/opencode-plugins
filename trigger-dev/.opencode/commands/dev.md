@@ -1,7 +1,5 @@
 ---
 description: Start the Trigger.dev dev server
-argument-hint:
-  - '--profile <name>'
 ---
 
 # Start Dev Server

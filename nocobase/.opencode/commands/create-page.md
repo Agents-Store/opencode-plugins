@@ -1,6 +1,5 @@
 ---
 description: Create a NocoBase page with blocks
-argument-hint: <page-title> [--collection <name>] [--block <table|form|details|kanban>]
 ---
 
 # Create Page

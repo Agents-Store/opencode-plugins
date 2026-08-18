@@ -1,6 +1,5 @@
 ---
 description: Report a problem with macstack-dev, the macstack.json schema, or the registry — and fix it at the source
-argument-hint: <what went wrong>
 ---
 
 Use the macstack-dev:feedback skill for: $ARGUMENTS. Route the fix to the right

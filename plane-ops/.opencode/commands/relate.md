@@ -1,6 +1,5 @@
 ---
 description: Create a relation between two Plane work items (block, duplicate, relates-to)
-argument-hint: <relation> <project> <from-item> <to-item>
 ---
 
 # Relate

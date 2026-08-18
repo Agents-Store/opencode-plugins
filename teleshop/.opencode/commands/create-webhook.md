@@ -1,6 +1,5 @@
 ---
 description: Create a new webhook for event notifications
-argument-hint: <url> [<event>]
 ---
 
 # Create Webhook

@@ -1,7 +1,5 @@
 ---
 description: List store customers with optional search
-argument-hint:
-  - '--search <query>'
 ---
 
 # List Customers

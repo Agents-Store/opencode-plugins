@@ -1,7 +1,5 @@
 ---
 description: List all product categories with optional search
-argument-hint:
-  - '--search <query>'
 ---
 
 # List Categories

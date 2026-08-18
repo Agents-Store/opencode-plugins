@@ -1,6 +1,5 @@
 ---
 description: Generate a professional report (DOCX/PDF)
-argument-hint: <title> [--format <docx|pdf>] [--type <annual|quarterly|project>]
 ---
 
 # Generate Report

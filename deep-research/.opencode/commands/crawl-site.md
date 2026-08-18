@@ -1,6 +1,5 @@
 ---
 description: Crawl an entire website or map its structure
-argument-hint: <url> [--depth <number>] [--limit <max-pages>] [--map-only]
 ---
 
 # Crawl Site

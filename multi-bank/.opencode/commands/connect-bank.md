@@ -1,6 +1,5 @@
 ---
 description: Connect a bank account — verify MCP server connectivity
-argument-hint: <bank-name>
 ---
 
 # Connect Bank

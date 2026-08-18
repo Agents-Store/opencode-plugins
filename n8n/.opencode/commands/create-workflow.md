@@ -1,6 +1,5 @@
 ---
 description: Create a new n8n workflow
-argument-hint: <name> [--trigger <webhook|schedule|manual>]
 ---
 
 # Create Workflow

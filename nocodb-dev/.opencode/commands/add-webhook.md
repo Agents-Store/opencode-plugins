@@ -1,6 +1,5 @@
 ---
 description: Configure a NocoDB webhook (HookV3) on a table
-argument-hint: '[table-name-or-id] [event] [destination]'
 ---
 
 # Add Webhook

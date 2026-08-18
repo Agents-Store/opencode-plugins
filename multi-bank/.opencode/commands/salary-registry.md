@@ -1,6 +1,5 @@
 ---
 description: Manage salary registries — create, check status, list types
-argument-hint: <create|status|types> [registry-id]
 ---
 
 # Salary Registry

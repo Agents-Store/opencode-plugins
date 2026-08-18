@@ -1,6 +1,5 @@
 ---
 description: Create a new CRM deal in a pipeline
-argument-hint: <deal-name> [--pipeline <id>] [--amount <amount>]
 ---
 
 # Create Deal

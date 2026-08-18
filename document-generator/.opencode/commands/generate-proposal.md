@@ -1,6 +1,5 @@
 ---
 description: Generate a professional business proposal (DOCX/PDF)
-argument-hint: <title> [--format <docx|pdf>] [--company <name>]
 ---
 
 # Generate Proposal

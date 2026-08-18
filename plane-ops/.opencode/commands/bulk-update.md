@@ -1,6 +1,5 @@
 ---
 description: Apply the same change to many Plane work items at once
-argument-hint: <project> <items...> <changes...>
 ---
 
 # Bulk Update

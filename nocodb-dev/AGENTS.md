@@ -4,9 +4,11 @@
 
 Canonical: https://github.com/agents-store/claude-public-plugins/tree/main/plugins/nocodb-dev
 
-## Skills (exposed as subagents)
+## Skills
 
-- `@skill-api-reference` — NocoDB REST API reference for schema-development work. Loaded only on explicit cite. Use when:
+Automatically discovered by OpenCode from `.opencode/skills/` (native skill support, Feb 2026) — loaded on demand from their descriptions below, no manual invocation needed:
+
+- **api-reference** — NocoDB REST API reference for schema-development work. Loaded only on explicit cite. Use when:
 - "NocoDB REST API"
 - "API endpoints for tables/fields/views"
 - "create a table via API"
@@ -16,14 +18,14 @@ Canonical: https://github.com/agents-store/claude-public-plugins/tree/main/plugi
 - "Hook v3 payload"
 - "dashboard / widget API"
 
-- `@skill-cli-reference` — NocoDB `nc` CLI reference — schema-focused commands for tables, fields, views, links, hooks. Loaded only on explicit cite. Use when:
+- **cli-reference** — NocoDB `nc` CLI reference — schema-focused commands for tables, fields, views, links, hooks. Loaded only on explicit cite. Use when:
 - "nc CLI commands"
 - "NocoDB CLI schema commands"
 - "how do I create a table from the CLI"
 - "nc field:create reference"
 - "NocoDB agent-skills CLI"
 
-- `@skill-dashboards` — Create and manage NocoDB Dashboards and Widgets via Meta API v3. Use when:
+- **dashboards** — Create and manage NocoDB Dashboards and Widgets via Meta API v3. Use when:
 - "create a dashboard"
 - "add a chart / metric / KPI widget"
 - "list widgets on a dashboard"
@@ -31,14 +33,14 @@ Canonical: https://github.com/agents-store/claude-public-plugins/tree/main/plugi
 - "update a dashboard"
 - "delete a widget"
 
-- `@skill-examples` — End-to-end NocoDB schema-development walkthroughs. Use when:
+- **examples** — End-to-end NocoDB schema-development walkthroughs. Use when:
 - "show me a schema example"
 - "how do I build a CRM in NocoDB?"
 - "e-commerce schema example"
 - "schema design walkthrough"
 - "NocoDB dev scenarios"
 
-- `@skill-field-management` — Create, update, and delete NocoDB fields across all 30 supported types — text, numeric, date, select, attachment, JSON, geometry, links, lookup, rollup, formula, button, barcode/QR, system fields. Use when:
+- **field-management** — Create, update, and delete NocoDB fields across all 30 supported types — text, numeric, date, select, attachment, JSON, geometry, links, lookup, rollup, formula, button, barcode/QR, system fields. Use when:
 - "add a field"
 - "create a column"
 - "rename a field"
@@ -48,21 +50,21 @@ Canonical: https://github.com/agents-store/claude-public-plugins/tree/main/plugi
 - "set up lookup or rollup"
 - "link two tables"
 
-- `@skill-mcp-patterns` — NocoDB MCP tools usable for schema-development work. Use when:
+- **mcp-patterns** — NocoDB MCP tools usable for schema-development work. Use when:
 - "what MCP tools can I use for schema?"
 - "how do I discover NocoDB structure?"
 - "MCP for nocodb-dev"
 - "can MCP create tables?"
 - "NocoDB MCP discovery"
 
-- `@skill-setup` — Verify NocoDB connection for schema-development work — both transports (MCP + CLI/API). Use when:
+- **setup** — Verify NocoDB connection for schema-development work — both transports (MCP + CLI/API). Use when:
 - "check NocoDB dev setup"
 - "verify NocoDB API access"
 - "is the nc CLI working?"
 - "can I modify schema?"
 - "test NocoDB MCP connection"
 
-- `@skill-table-management` — Create, update, rename, duplicate, and delete NocoDB tables. Use when:
+- **table-management** — Create, update, rename, duplicate, and delete NocoDB tables. Use when:
 - "create a new NocoDB table"
 - "rename a table"
 - "delete a NocoDB table"
@@ -70,7 +72,7 @@ Canonical: https://github.com/agents-store/claude-public-plugins/tree/main/plugi
 - "duplicate a table"
 - "add a table with initial fields"
 
-- `@skill-troubleshoot` — Diagnose schema-side NocoDB errors — read-only fields, type-change rejections, broken Lookups, formula errors, view config validation, version mismatches. Use when:
+- **troubleshoot** — Diagnose schema-side NocoDB errors — read-only fields, type-change rejections, broken Lookups, formula errors, view config validation, version mismatches. Use when:
 - "field type change rejected"
 - "Lookup not working"
 - "formula returns ERR"
@@ -79,7 +81,7 @@ Canonical: https://github.com/agents-store/claude-public-plugins/tree/main/plugi
 - "schema cache stale"
 - "NocoDB version too old"
 
-- `@skill-view-management` — Create, configure, and delete NocoDB views — Grid, Form, Gallery, Kanban, Calendar, Map. Use when:
+- **view-management** — Create, configure, and delete NocoDB views — Grid, Form, Gallery, Kanban, Calendar, Map. Use when:
 - "create a kanban view"
 - "add a calendar view"
 - "build a form for intake"
@@ -88,7 +90,7 @@ Canonical: https://github.com/agents-store/claude-public-plugins/tree/main/plugi
 - "delete a view"
 - "show / hide columns on a view"
 
-- `@skill-webhooks` — Configure NocoDB webhooks (HookV3) — triggers, conditions, and notification targets (URL, Email, Messaging, Script). Use when:
+- **webhooks** — Configure NocoDB webhooks (HookV3) — triggers, conditions, and notification targets (URL, Email, Messaging, Script). Use when:
 - "add a webhook"
 - "fire a Slack message on insert"
 - "send email when a record changes"
@@ -96,7 +98,7 @@ Canonical: https://github.com/agents-store/claude-public-plugins/tree/main/plugi
 - "list webhooks on a table"
 - "delete a hook"
 
-- `@skill-workflows` — List, execute, and inspect NocoDB Workflows (the platform's built-in automation engine) via Meta API v3. Use when:
+- **workflows** — List, execute, and inspect NocoDB Workflows (the platform's built-in automation engine) via Meta API v3. Use when:
 - "list NocoDB workflows"
 - "execute a workflow"
 - "view workflow execution"

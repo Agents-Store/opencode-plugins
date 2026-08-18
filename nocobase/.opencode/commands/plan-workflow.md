@@ -1,6 +1,5 @@
 ---
 description: Plan a NocoBase workflow automation
-argument-hint: <description>
 ---
 
 # Plan Workflow

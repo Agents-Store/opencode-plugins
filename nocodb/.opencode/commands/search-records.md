@@ -1,6 +1,5 @@
 ---
 description: Search records in a NocoDB table
-argument-hint: <table-name> <query>
 ---
 
 # Search Records

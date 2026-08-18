@@ -1,7 +1,5 @@
 ---
 description: List email addressbooks with subscriber counts
-argument-hint:
-  - '--limit <number>'
 ---
 
 # List Addressbooks

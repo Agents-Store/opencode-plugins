@@ -4,15 +4,23 @@ Web search and scraping developer toolkit. MCP tool patterns, REST API reference
 
 ## Install
 
-Project-scoped: copy contents into your project.
+Copy this directory's contents into your project (or `~/.config/opencode/` for a global install):
 
 ```bash
-cp opencode.json /path/to/your-project/
-cp AGENTS.md /path/to/your-project/
-cp -r .opencode /path/to/your-project/
+cp -r .opencode opencode.json AGENTS.md /path/to/your-project/
 ```
 
-User-global: copy `.opencode/agents/` and `.opencode/commands/` into `~/.config/opencode/`.
+Skills under `.opencode/skills/` are discovered natively by OpenCode (native skill support, Feb 2026) — no manual registration needed.
+
+## MCP servers
+
+Configured in `opencode.json`. Required environment variables:
+
+- `CONTEXT7_API_KEY`
+- `EXA_API_KEY`
+- `FIRECRAWL_API_TOKEN`
+- `JINA_API_KEY`
+- `PERPLEXITY_API_KEY`
 
 ## Source
 

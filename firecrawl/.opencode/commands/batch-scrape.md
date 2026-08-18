@@ -1,6 +1,5 @@
 ---
 description: Batch scrape multiple URLs at once
-argument-hint: <url1> <url2> [url3] ... [--format <markdown|html>]
 ---
 
 # Batch Scrape

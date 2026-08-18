@@ -1,6 +1,5 @@
 ---
 description: Generate a professional presentation (PPTX)
-argument-hint: <title> [--slides <number>] [--theme <corporate|minimal|bold>]
 ---
 
 # Generate Presentation

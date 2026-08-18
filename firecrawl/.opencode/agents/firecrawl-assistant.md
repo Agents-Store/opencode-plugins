@@ -12,13 +12,10 @@ description: |
   user: "Search the web for recent articles about AI regulations"
   </example>
 mode: subagent
-model: anthropic/claude-sonnet-4-5
+model: anthropic/claude-sonnet-5
 temperature: 0.2
-permission:
-  edit: allow
-  bash: allow
 tools:
-  - firecrawl__*
+  firecrawl_*: true
 ---
 
 # Firecrawl Assistant

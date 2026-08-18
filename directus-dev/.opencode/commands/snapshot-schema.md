@@ -1,7 +1,5 @@
 ---
 description: Get a schema snapshot — shows complete data model for one or more collections
-argument-hint:
-  - collection1 collection2 ...
 ---
 
 # Snapshot Schema

@@ -1,6 +1,5 @@
 ---
 description: Set up a Link between two NocoDB tables, optionally with a Lookup
-argument-hint: '[from-table] [to-table] [cardinality]'
 ---
 
 # Add Relation

@@ -1,6 +1,5 @@
 ---
 description: Update self-hosted Dify — pull upstream, merge into dev, sync .env, rebuild Docker containers
-argument-hint: '[tag-or-version]'
 ---
 
 # Dify Update

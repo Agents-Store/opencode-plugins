@@ -1,7 +1,5 @@
 ---
 description: List all fields on a NocoDB table with their types
-argument-hint:
-  - table-name-or-id
 ---
 
 # List Fields

@@ -9,13 +9,10 @@ description: |
   user: "Import 50 sample contacts into NocoBase"
   </example>
 mode: subagent
-model: anthropic/claude-sonnet-4-5
+model: anthropic/claude-sonnet-5
 temperature: 0.2
-permission:
-  edit: allow
-  bash: allow
 tools:
-  - nocobase__*
+  nocobase_*: true
 ---
 
 # NocoBase Builder

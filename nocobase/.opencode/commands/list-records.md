@@ -1,6 +1,5 @@
 ---
 description: List records from a NocoBase collection
-argument-hint: <collection> [--limit <n>] [--filter <field=value>]
 ---
 
 # List Records

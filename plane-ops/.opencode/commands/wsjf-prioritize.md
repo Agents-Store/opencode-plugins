@@ -1,6 +1,5 @@
 ---
 description: Prioritize backlog items using Weighted Shortest Job First (WSJF) scoring
-argument-hint: <project>
 ---
 
 # WSJF Prioritize

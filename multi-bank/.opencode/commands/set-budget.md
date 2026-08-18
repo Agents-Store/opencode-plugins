@@ -1,6 +1,5 @@
 ---
 description: Create or update a budget threshold with alerts
-argument-hint: <category> <amount> [period]
 ---
 
 # Set Budget

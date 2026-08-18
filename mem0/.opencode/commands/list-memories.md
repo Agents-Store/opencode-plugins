@@ -1,6 +1,5 @@
 ---
 description: List all stored memories with optional pagination
-argument-hint: '[--user <user_id>] [--limit <n>] [--page <n>]'
 ---
 
 # List Memories

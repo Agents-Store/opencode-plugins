@@ -1,6 +1,5 @@
 ---
 description: Create a Plane module (feature/workstream grouping across sprints)
-argument-hint: <project> <module name> [--lead <user>] [--target <YYYY-MM-DD>]
 ---
 
 # Create Module

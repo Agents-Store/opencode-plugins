@@ -1,6 +1,5 @@
 ---
 description: Create, update, or inspect a work item (issue/task/ticket) in Plane
-argument-hint: <action> <project> [args...]
 ---
 
 # Work Item

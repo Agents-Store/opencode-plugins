@@ -1,7 +1,5 @@
 ---
 description: Show budget utilization and active alerts
-argument-hint:
-  - category
 ---
 
 # Budget Status

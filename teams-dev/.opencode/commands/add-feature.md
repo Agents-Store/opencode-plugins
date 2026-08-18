@@ -1,6 +1,5 @@
 ---
 description: Add a feature (message handler, Adaptive Card, dialog, message extension, tab, AI agent, MCP plugin, SSO, Graph call) to an existing Microsoft Teams app
-argument-hint: <feature>
 ---
 
 # /teams-dev:add-feature

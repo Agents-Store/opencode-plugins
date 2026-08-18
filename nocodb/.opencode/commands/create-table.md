@@ -1,6 +1,5 @@
 ---
 description: Create a new table in NocoDB
-argument-hint: <table-name> [--columns <col1:type,col2:type>]
 ---
 
 # Create Table

@@ -1,6 +1,5 @@
 ---
 description: List products with optional search, category, status, and limit filters
-argument-hint: '[--search <query>] [--category <name>] [--status available|unavailable|preorder] [--limit <n>]'
 ---
 
 # List Products

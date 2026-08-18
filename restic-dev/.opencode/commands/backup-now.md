@@ -1,6 +1,5 @@
 ---
 description: Run an ad-hoc restic backup now and show the resulting snapshot
-argument-hint: '[--dry-run]'
 ---
 
 # restic Backup Now

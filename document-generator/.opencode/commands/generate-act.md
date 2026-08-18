@@ -1,6 +1,5 @@
 ---
 description: Generate an Act of Completed Works (PDF)
-argument-hint: <title> [--format <pdf|docx>]
 ---
 
 # Generate Act of Completed Works

@@ -1,6 +1,5 @@
 ---
 description: List recent workflow executions
-argument-hint: '[--workflow <name>] [--status <success|error|waiting>] [--limit <n>]'
 ---
 
 # List Executions

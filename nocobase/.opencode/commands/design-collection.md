@@ -1,6 +1,5 @@
 ---
 description: Design a NocoBase collection schema
-argument-hint: <collection-name> [--fields <field1:type,field2:type>]
 ---
 
 # Design Collection

@@ -1,6 +1,5 @@
 ---
 description: List and search transaction history across all accounts
-argument-hint: <days> [category] [bank]
 ---
 
 # Transactions

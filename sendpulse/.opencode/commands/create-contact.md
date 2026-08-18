@@ -1,6 +1,5 @@
 ---
 description: Create a new CRM contact
-argument-hint: <email> [--name <name>] [--phone <phone>]
 ---
 
 # Create Contact

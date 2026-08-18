@@ -39,13 +39,16 @@ description: |
   user: "List all corporate cards"
   </example>
 mode: subagent
-model: anthropic/claude-sonnet-4-5
+model: anthropic/claude-sonnet-5
 temperature: 0.2
-permission:
-  edit: allow
-  bash: allow
 tools:
-  - Bash, Read, Write, Glob, Grep, mcp__monobank__*, mcp__privatbank__*
+  bash: true
+  read: true
+  write: true
+  glob: true
+  grep: true
+  monobank_*: true
+  privatbank_*: true
 ---
 
 # Bank Account Manager

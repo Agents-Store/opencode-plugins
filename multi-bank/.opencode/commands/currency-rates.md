@@ -1,7 +1,5 @@
 ---
 description: Show current or historical currency exchange rates
-argument-hint:
-  - history <start-date> <end-date>
 ---
 
 # Currency Rates

@@ -1,6 +1,5 @@
 ---
 description: Read and extract content from a URL with fallback
-argument-hint: <url> [--format <markdown|json|screenshot>]
 ---
 
 # Read URL

@@ -1,6 +1,5 @@
 ---
 description: Generate NocoBase plugin scaffold structure
-argument-hint: <plugin-name> [--type <server|client|full>]
 ---
 
 # Create Plugin Scaffold

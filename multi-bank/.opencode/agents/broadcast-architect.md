@@ -15,13 +15,14 @@ description: |
   user: "Show me the broadcast system architecture"
   </example>
 mode: subagent
-model: anthropic/claude-sonnet-4-5
+model: anthropic/claude-sonnet-5
 temperature: 0.2
-permission:
-  edit: allow
-  bash: allow
 tools:
-  - Bash, Read, Write, Glob, Grep
+  bash: true
+  read: true
+  write: true
+  glob: true
+  grep: true
 ---
 
 # Broadcast Architect

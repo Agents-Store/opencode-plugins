@@ -12,13 +12,10 @@ description: |
   user: "Set up a workflow that sends notifications on new orders"
   </example>
 mode: subagent
-model: anthropic/claude-sonnet-4-5
+model: anthropic/claude-sonnet-5
 temperature: 0.2
-permission:
-  edit: allow
-  bash: allow
 tools:
-  - nocobase__*
+  nocobase_*: true
 ---
 
 # NocoBase Assistant

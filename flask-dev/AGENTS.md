@@ -4,19 +4,21 @@
 
 Canonical: https://github.com/agents-store/claude-public-plugins/tree/main/plugins/flask-dev
 
-## Skills (exposed as subagents)
+## Skills
 
-- `@skill-api-reference` — Use when the user asks for "Flask API reference", "Flask decorators", "Flask request object", "Flask response", "Flask config options", "Flask url_for", "Flask flash messages", or needs specific Flask framework API details.
+Automatically discovered by OpenCode from `.opencode/skills/` (native skill support, Feb 2026) — loaded on demand from their descriptions below, no manual invocation needed:
 
-- `@skill-app-patterns` — Use when the user asks about "Flask application factory", "Flask blueprints", "Flask config management", "Flask extensions", "organize Flask project", "Flask app structure", "register Flask blueprint", "Flask context processors", or needs patterns for structuring a Flask application.
+- **api-reference** — Use when the user asks for "Flask API reference", "Flask decorators", "Flask request object", "Flask response", "Flask config options", "Flask url_for", "Flask flash messages", or needs specific Flask framework API details.
 
-- `@skill-cli-recipes` — Use when the user asks about "Flask CLI", "flask run", "flask shell", "flask routes", "Flask command line", "custom Flask CLI command", "run Flask from terminal", or needs ready-to-use Flask CLI commands.
+- **app-patterns** — Use when the user asks about "Flask application factory", "Flask blueprints", "Flask config management", "Flask extensions", "organize Flask project", "Flask app structure", "register Flask blueprint", "Flask context processors", or needs patterns for structuring a Flask application.
 
-- `@skill-jinja2-patterns` — Use when the user asks about "Jinja2 templates", "Flask templates", "template inheritance", "Jinja2 macros", "Jinja2 filters", "Flask render_template", "base template", "template blocks", or needs patterns for Jinja2 template engine in Flask.
+- **cli-recipes** — Use when the user asks about "Flask CLI", "flask run", "flask shell", "flask routes", "Flask command line", "custom Flask CLI command", "run Flask from terminal", or needs ready-to-use Flask CLI commands.
 
-- `@skill-setup` — Use when the user asks to "verify Flask project setup", "check Flask structure", "is my Flask app set up correctly", "validate Flask project", or needs to confirm that a Flask project follows recommended patterns and has correct file structure.
+- **jinja2-patterns** — Use when the user asks about "Jinja2 templates", "Flask templates", "template inheritance", "Jinja2 macros", "Jinja2 filters", "Flask render_template", "base template", "template blocks", or needs patterns for Jinja2 template engine in Flask.
 
-- `@skill-troubleshoot` — Use when the user encounters "Flask errors", "Flask not working", "Flask import error", "Flask 500 error", "debug Flask", "Flask template not found", "Flask circular import", or needs to diagnose and fix common Flask problems.
+- **setup** — Use when the user asks to "verify Flask project setup", "check Flask structure", "is my Flask app set up correctly", "validate Flask project", or needs to confirm that a Flask project follows recommended patterns and has correct file structure.
+
+- **troubleshoot** — Use when the user encounters "Flask errors", "Flask not working", "Flask import error", "Flask 500 error", "debug Flask", "Flask template not found", "Flask circular import", or needs to diagnose and fix common Flask problems.
 
 
 ## Agents

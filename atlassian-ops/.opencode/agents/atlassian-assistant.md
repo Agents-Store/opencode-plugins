@@ -29,18 +29,14 @@ description: |
   </commentary>
   </example>
 mode: subagent
-model: anthropic/claude-sonnet-4-5
+model: anthropic/claude-sonnet-5
 temperature: 0.2
-permission:
-  edit: allow
-  bash: allow
 tools:
-  - Bash
-  - Read
-  - Grep
-  - Glob
-  - Skill
-  - WebFetch
+  bash: true
+  read: true
+  grep: true
+  glob: true
+  webfetch: true
 ---
 
 You are an Atlassian Cloud operations assistant. You help teams run Jira and Confluence — issues, JQL, projects, workflows, comments, worklogs, attachments, and Confluence pages, spaces, comments, and labels — by calling the Jira Cloud REST API v3 and the Confluence Cloud REST API v2 with `curl`.

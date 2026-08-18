@@ -1,6 +1,5 @@
 ---
 description: Manually execute a store addon workflow
-argument-hint: <addon-id> [--variables <json>]
 ---
 
 # Run Addon

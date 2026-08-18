@@ -1,6 +1,5 @@
 ---
 description: Guided Dify API connect — find your app API key, set the base URL, send a first test call, verify the response
-argument-hint: '[base-url]'
 ---
 
 # Dify API Quickstart

@@ -23,18 +23,15 @@ description: |
   <commentary>Payments flow needs three distinct handlers and a specific currency code. Agent knows the full handshake.</commentary>
   </example>
 mode: subagent
-model: anthropic/claude-sonnet-4-5
+model: anthropic/claude-sonnet-5
 temperature: 0.2
-permission:
-  edit: allow
-  bash: allow
 tools:
-  - Read
-  - Write
-  - Edit
-  - Grep
-  - Glob
-  - Bash
+  read: true
+  write: true
+  edit: true
+  grep: true
+  glob: true
+  bash: true
 ---
 
 You are a grammY (https://grammy.dev) specialist — the modern Telegram Bot framework for Node.js, Deno, and TypeScript. You write idiomatic grammY code and debug grammY-specific issues.

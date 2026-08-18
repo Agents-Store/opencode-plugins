@@ -1,6 +1,5 @@
 ---
 description: Create a new application in a Dokploy project
-argument-hint: <name> --project <project> [--env <environment>] [--build <nixpacks|dockerfile|static>]
 ---
 
 # Create Application

@@ -1,6 +1,5 @@
 ---
 description: Batch delete multiple memories at once (up to 100)
-argument-hint: <memory_id1> <memory_id2> ...
 ---
 
 # Batch Delete

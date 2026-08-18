@@ -1,6 +1,5 @@
 ---
 description: List columns in a NocoDB table
-argument-hint: <table>
 ---
 
 # List Columns

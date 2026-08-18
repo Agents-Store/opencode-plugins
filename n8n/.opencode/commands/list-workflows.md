@@ -1,6 +1,5 @@
 ---
 description: List all n8n workflows
-argument-hint: '[--active] [--tag <tag>]'
 ---
 
 # List Workflows

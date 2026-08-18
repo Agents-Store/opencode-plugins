@@ -1,6 +1,5 @@
 ---
 description: Execute an n8n workflow
-argument-hint: <workflow> [--data <json>]
 ---
 
 # Execute Workflow

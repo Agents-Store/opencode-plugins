@@ -1,6 +1,5 @@
 ---
 description: Create a new product in the store
-argument-hint: <title> <sku> <price> [--quantity <n>] [--category <id>] [--description <text>]
 ---
 
 # Create Product

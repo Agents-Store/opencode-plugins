@@ -1,6 +1,5 @@
 ---
 description: Add a subscriber to an email addressbook
-argument-hint: <email> [--addressbook <id>] [--name <name>]
 ---
 
 # Add Subscriber

@@ -1,7 +1,5 @@
 ---
 description: Diagnose a Chatwoot API / CLI / webhook problem — run read-only connectivity, auth, and scope checks against the configured instance and report the fix.
-argument-hint:
-  - optional: the error or symptom you're seeing
 ---
 
 Diagnose this Chatwoot problem: **$ARGUMENTS**

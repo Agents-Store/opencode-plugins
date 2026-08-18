@@ -1,6 +1,5 @@
 ---
 description: Run an on-page SEO audit for a URL using DataForSEO
-argument-hint: <url>
 ---
 
 # Site Audit

@@ -1,6 +1,5 @@
 ---
 description: Scrape a single URL
-argument-hint: <url> [--format <markdown|html>]
 ---
 
 # Scrape URL

@@ -1,6 +1,5 @@
 ---
 description: Create macstack.json in an existing project (audit codebase → validated spec)
-argument-hint: '[path]'
 ---
 
 Use the macstack-dev:setup skill to verify tooling, then the macstack-dev:init-project

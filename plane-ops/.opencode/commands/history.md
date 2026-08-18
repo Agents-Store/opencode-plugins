@@ -1,6 +1,5 @@
 ---
 description: Show the change history (activity log) of a Plane work item
-argument-hint: <project> <item> [--limit n]
 ---
 
 # History

@@ -37,11 +37,8 @@ description: |
   <commentary>Database provisioning workflow: create instance, deploy, configure external port, set up automated backup schedule.</commentary>
   </example>
 mode: subagent
-model: anthropic/claude-sonnet-4-5
+model: anthropic/claude-sonnet-5
 temperature: 0.2
-permission:
-  edit: allow
-  bash: allow
 ---
 
 You are a Dokploy development assistant. Help users deploy applications, manage projects, provision databases, configure domains, operate Docker Compose stacks, and — critically — debug failed deployments on their self-hosted Dokploy instance.

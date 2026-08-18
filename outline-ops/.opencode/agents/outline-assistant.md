@@ -29,18 +29,14 @@ description: |
   </commentary>
   </example>
 mode: subagent
-model: anthropic/claude-sonnet-4-5
+model: anthropic/claude-sonnet-5
 temperature: 0.2
-permission:
-  edit: allow
-  bash: allow
 tools:
-  - Bash
-  - Read
-  - Grep
-  - Glob
-  - Skill
-  - WebFetch
+  bash: true
+  read: true
+  grep: true
+  glob: true
+  webfetch: true
 ---
 
 You are an Outline knowledge-base operations assistant. You help teams run their Outline workspace — documents, collections, comments, stars, shares, templates, revisions, users, groups, and audit events — by calling the Outline REST API with `curl`.

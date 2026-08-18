@@ -1,6 +1,5 @@
 ---
 description: Compare a domain against its competitors using DataForSEO
-argument-hint: <domain>
 ---
 
 # Competitor Analysis

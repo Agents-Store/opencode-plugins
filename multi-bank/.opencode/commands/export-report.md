@@ -1,6 +1,5 @@
 ---
 description: Export financial report as CSV or PDF
-argument-hint: <format> [date-range]
 ---
 
 # Export Report

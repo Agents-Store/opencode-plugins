@@ -1,6 +1,5 @@
 ---
 description: Scaffold a new Microsoft Teams bot, tab, AI agent, or Graph app with the Teams Developer CLI
-argument-hint: <project-name> [template?]
 ---
 
 # /teams-dev:scaffold

@@ -1,6 +1,5 @@
 ---
 description: Manage Plane initiatives — strategic groupings above epics
-argument-hint: <action> [args...]
 ---
 
 # Initiative

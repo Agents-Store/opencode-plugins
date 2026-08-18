@@ -1,6 +1,5 @@
 ---
 description: List all applications and services in a Dokploy project
-argument-hint: <project-name-or-id>
 ---
 
 # List Applications

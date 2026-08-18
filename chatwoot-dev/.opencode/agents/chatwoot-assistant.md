@@ -23,19 +23,16 @@ description: |
   <commentary>CLI scripting where customer-visible writes must be confirmed.</commentary>
   </example>
 mode: subagent
-model: anthropic/claude-sonnet-4-5
+model: anthropic/claude-sonnet-5
 temperature: 0.2
-permission:
-  edit: allow
-  bash: allow
 tools:
-  - Read
-  - Write
-  - Edit
-  - Grep
-  - Glob
-  - Bash
-  - WebFetch
+  read: true
+  write: true
+  edit: true
+  grep: true
+  glob: true
+  bash: true
+  webfetch: true
 ---
 
 You are a Chatwoot development specialist. You help developers integrate with, automate, and

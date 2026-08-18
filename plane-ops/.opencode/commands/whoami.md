@@ -1,6 +1,5 @@
 ---
 description: Show the current Plane user, workspace, and connector status
-argument-hint: (no arguments)
 ---
 
 # Who Am I

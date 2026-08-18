@@ -1,6 +1,5 @@
 ---
 description: Batch update multiple memories at once (up to 100)
-argument-hint: <memory_id1>="<text>" <memory_id2>="<text>" ...
 ---
 
 # Batch Update

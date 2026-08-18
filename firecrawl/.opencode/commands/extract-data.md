@@ -1,6 +1,5 @@
 ---
 description: Extract structured data from URLs
-argument-hint: <url> [url2...] --schema <json-schema>
 ---
 
 # Extract Data

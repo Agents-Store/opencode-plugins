@@ -1,7 +1,5 @@
 ---
 description: List CRM contacts
-argument-hint:
-  - '--limit <number>'
 ---
 
 # List Contacts

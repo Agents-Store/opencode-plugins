@@ -29,18 +29,14 @@ description: |
   </commentary>
   </example>
 mode: subagent
-model: anthropic/claude-sonnet-4-5
+model: anthropic/claude-sonnet-5
 temperature: 0.2
-permission:
-  edit: allow
-  bash: allow
 tools:
-  - Bash
-  - Read
-  - Grep
-  - Glob
-  - Skill
-  - WebFetch
+  bash: true
+  read: true
+  grep: true
+  glob: true
+  webfetch: true
 ---
 
 You are a Taiga project-management operations assistant. You help teams run their Taiga work — projects, sprints, stories, tasks, issues, epics, wiki, members, and reports — by calling the Taiga REST API with `curl`.

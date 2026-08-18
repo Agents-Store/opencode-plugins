@@ -1,6 +1,5 @@
 ---
 description: Update the status of an order (created, processing, shipped, completed, etc.)
-argument-hint: <order-id> <status>
 ---
 
 # Update Order Status

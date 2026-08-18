@@ -1,6 +1,5 @@
 ---
 description: Analyze a workflow JSON or template before importing
-argument-hint: <template-id-or-url>
 ---
 
 # Analyze Workflow

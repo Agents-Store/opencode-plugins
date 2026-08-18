@@ -1,7 +1,5 @@
 ---
 description: List CRM tasks
-argument-hint:
-  - '--limit <number>'
 ---
 
 # List Tasks

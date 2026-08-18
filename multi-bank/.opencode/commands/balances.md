@@ -1,7 +1,5 @@
 ---
 description: Show current balances across all connected bank accounts
-argument-hint:
-  - bank-name
 ---
 
 # Balances

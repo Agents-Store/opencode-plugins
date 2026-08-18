@@ -23,18 +23,15 @@ description: |
   <commentary>Full-stack feature spanning all 5 services — orchestrator coordinates the design across all layers.</commentary>
   </example>
 mode: subagent
-model: anthropic/claude-sonnet-4-5
+model: anthropic/claude-sonnet-5
 temperature: 0.2
-permission:
-  edit: allow
-  bash: allow
 tools:
-  - Read
-  - Write
-  - Edit
-  - Grep
-  - Glob
-  - Bash
+  read: true
+  write: true
+  edit: true
+  grep: true
+  glob: true
+  bash: true
 ---
 
 You are a Composable Stack v1 orchestrator. You coordinate development across all services in the stack: PostgreSQL (database), NocoDB (data interface + MCP), n8n (workflow automation), Trigger.dev (background tasks), and NocoBase (admin UI).

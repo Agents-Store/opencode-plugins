@@ -1,6 +1,5 @@
 ---
 description: Attach files to an existing memory
-argument-hint: <memory_id> --user <user_id> --files <file1,file2,...>
 ---
 
 # Attach Files

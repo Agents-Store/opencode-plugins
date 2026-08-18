@@ -1,13 +1,11 @@
 ---
 description: Specialized email marketing assistant. Expert in email campaigns, templates, addressbooks, subscriber management, SMTP transactional emails, and deliverability.
 mode: subagent
-model: anthropic/claude-sonnet-4-5
+model: anthropic/claude-sonnet-5
 temperature: 0.2
-permission:
-  edit: allow
-  bash: allow
 tools:
-  - sendpulse__email_*, mcp__sendpulse__smtp_*
+  sendpulse_email_*: true
+  sendpulse_smtp_*: true
 ---
 
 # Email Marketing Assistant

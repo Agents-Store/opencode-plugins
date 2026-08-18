@@ -1,6 +1,5 @@
 ---
 description: Search the web
-argument-hint: <query> [--limit <n>]
 ---
 
 # Search

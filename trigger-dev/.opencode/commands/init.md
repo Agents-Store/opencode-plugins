@@ -1,7 +1,5 @@
 ---
 description: Initialize Trigger.dev in the current project
-argument-hint:
-  - '--self-hosted <url>'
 ---
 
 # Initialize Trigger.dev

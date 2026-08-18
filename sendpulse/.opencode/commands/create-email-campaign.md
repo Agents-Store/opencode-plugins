@@ -1,6 +1,5 @@
 ---
 description: Create and send an email campaign
-argument-hint: <subject> [--addressbook <id>] [--sender <email>] [--template <id>]
 ---
 
 # Create Email Campaign

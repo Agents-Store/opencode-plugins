@@ -38,19 +38,16 @@ description: |
   </commentary>
   </example>
 mode: subagent
-model: anthropic/claude-sonnet-4-5
+model: anthropic/claude-sonnet-5
 temperature: 0.2
-permission:
-  edit: allow
-  bash: allow
 tools:
-  - Read
-  - Write
-  - Edit
-  - Grep
-  - Glob
-  - Bash
-  - dataforseo__*
+  read: true
+  write: true
+  edit: true
+  grep: true
+  glob: true
+  bash: true
+  dataforseo_*: true
 ---
 
 You are a DataForSEO SEO data analysis specialist. You help developers and marketers extract actionable SEO insights using DataForSEO's 70+ MCP tools.

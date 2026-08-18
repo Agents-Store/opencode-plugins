@@ -1,13 +1,10 @@
 ---
 description: Interactive Sendpulse assistant. Helps with chatbot management, CRM operations, email marketing, SMTP transactional emails, and multi-channel campaign orchestration.
 mode: subagent
-model: anthropic/claude-sonnet-4-5
+model: anthropic/claude-sonnet-5
 temperature: 0.2
-permission:
-  edit: allow
-  bash: allow
 tools:
-  - sendpulse__*
+  sendpulse_*: true
 ---
 
 # Sendpulse Assistant

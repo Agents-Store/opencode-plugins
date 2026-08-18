@@ -1,6 +1,5 @@
 ---
 description: Add a new memory from text
-argument-hint: '"<text to remember>" [--user <user_id>]'
 ---
 
 # Add Memory

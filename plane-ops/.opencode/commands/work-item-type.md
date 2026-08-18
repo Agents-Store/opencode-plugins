@@ -1,6 +1,5 @@
 ---
 description: Manage custom work item types in a Plane project (Story, Bug, Spike, ...)
-argument-hint: <action> <project> [args...]
 ---
 
 # Work Item Type

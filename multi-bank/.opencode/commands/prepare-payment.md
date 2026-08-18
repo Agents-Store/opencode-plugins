@@ -1,6 +1,5 @@
 ---
 description: Prepare a payment to a recipient via bank MCP tools
-argument-hint: <recipient-iban> <amount-uah> <destination>
 ---
 
 # Prepare Payment

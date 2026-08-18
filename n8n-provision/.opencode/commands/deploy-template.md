@@ -1,6 +1,5 @@
 ---
 description: Deploy an official n8n template to your instance
-argument-hint: <template-id> [--name <custom-name>] [--auto-fix]
 ---
 
 # Deploy Template

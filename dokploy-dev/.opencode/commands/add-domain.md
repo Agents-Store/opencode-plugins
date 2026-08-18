@@ -1,6 +1,5 @@
 ---
 description: Add a custom domain to a Dokploy application
-argument-hint: <domain> --app <app-name-or-id> [--port <port>] [--https]
 ---
 
 # Add Domain

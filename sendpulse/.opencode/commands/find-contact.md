@@ -1,6 +1,5 @@
 ---
 description: Find a CRM contact by email address
-argument-hint: <email>
 ---
 
 # Find Contact

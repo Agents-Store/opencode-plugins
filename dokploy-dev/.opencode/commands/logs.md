@@ -1,13 +1,12 @@
 ---
 description: Read runtime or build logs for a Dokploy application, compose stack, database, or deployment
-argument-hint: <resource-name-or-id> [--type <app|compose|db|deployment>] [--tail <N>] [--since <1h>] [--search <term>]
 ---
 
 # Read Dokploy Logs
 
 Unified log reader. Resolves the resource type and reads logs **directly over MCP/REST** (Dokploy v0.29.0+ — runtime logs are first-class over MCP/REST/CLI; no SSH/Beszel needed). For a multi-container compose stack, use `/dokploy-dev:compose-logs` instead — it reads every container.
 
-Follow the `read-logs` skill (`${CLAUDE_PLUGIN_ROOT}/skills/read-logs/SKILL.md`) — load it first.
+Follow the `read-logs` skill (`./skills/read-logs/SKILL.md`) — load it first.
 
 ## Arguments
 

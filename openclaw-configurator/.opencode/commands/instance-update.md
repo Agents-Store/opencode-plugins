@@ -1,6 +1,5 @@
 ---
 description: Update OpenClaw instance from official GitHub repo — fetch latest tag, merge into dev preserving local changes, rebuild Docker containers, then reconcile config against the new release and run openclaw doctor
-argument-hint: '[tag-or-version]'
 ---
 
 # Instance Update

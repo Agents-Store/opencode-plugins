@@ -1,6 +1,5 @@
 ---
 description: Find main user flows (entry points → services → DB) and visualize them
-argument-hint: (no arguments — auto-discovers flows)
 ---
 
 # Discover and Visualize User Flows
@@ -10,7 +9,7 @@ Find the main user flows in the project and generate visual diagrams for each.
 ## Instructions
 
 1. Read the primary skill:
-   - `${CLAUDE_PLUGIN_ROOT}/skills/codemap-explain/SKILL.md` — for understanding and tracing flows
+   - `./skills/codemap-explain/SKILL.md` — for understanding and tracing flows
 
 2. Ensure output directories exist: `docs/codemap/diagrams/` — create if missing.
 

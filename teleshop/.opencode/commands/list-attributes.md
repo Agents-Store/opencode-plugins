@@ -1,7 +1,5 @@
 ---
 description: List all product attributes with their values
-argument-hint:
-  - '--search <query>'
 ---
 
 # List Attributes

@@ -1,6 +1,5 @@
 ---
 description: Search GitHub repos and community platforms for n8n workflows
-argument-hint: <query> [--source <github|community|all>]
 ---
 
 # Search Community

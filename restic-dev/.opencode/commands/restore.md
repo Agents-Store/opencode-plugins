@@ -1,6 +1,5 @@
 ---
 description: Guided restore / disaster recovery from a restic repository
-argument-hint: '[--what <path>] [--snapshot <id|latest>] [--target <dir>]'
 ---
 
 # restic Restore

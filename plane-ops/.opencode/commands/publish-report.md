@@ -1,6 +1,5 @@
 ---
 description: Publish a Plane page — sprint report, retro, release notes, or roadmap
-argument-hint: <type> <project> [args...]
 ---
 
 # Publish Report

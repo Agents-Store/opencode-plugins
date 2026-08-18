@@ -1,6 +1,5 @@
 ---
 description: Look up a Dify API endpoint — HTTP method, path, parameters, response shape, and a ready curl example
-argument-hint: '[endpoint-or-keyword]'
 ---
 
 # Dify API Lookup

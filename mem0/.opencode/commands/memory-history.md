@@ -1,6 +1,5 @@
 ---
 description: View the change history of a memory
-argument-hint: <memory_id>
 ---
 
 # Memory History

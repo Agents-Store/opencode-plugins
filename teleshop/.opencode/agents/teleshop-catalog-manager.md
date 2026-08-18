@@ -1,13 +1,34 @@
 ---
 description: Specialized catalog management agent for Teleshop. Focused on products, categories, attributes, catalog import, and customer data.
 mode: subagent
-model: anthropic/claude-sonnet-4-5
+model: anthropic/claude-sonnet-5
 temperature: 0.2
-permission:
-  edit: allow
-  bash: allow
 tools:
-  - teleshop__list_products, mcp__teleshop__get_product, mcp__teleshop__create_product, mcp__teleshop__batch_create_products, mcp__teleshop__update_product, mcp__teleshop__delete_product, mcp__teleshop__batch_delete_products, mcp__teleshop__update_product_images, mcp__teleshop__update_product_attributes, mcp__teleshop__list_categories, mcp__teleshop__get_category, mcp__teleshop__create_category, mcp__teleshop__batch_create_categories, mcp__teleshop__update_category, mcp__teleshop__delete_category, mcp__teleshop__batch_delete_categories, mcp__teleshop__list_attributes, mcp__teleshop__get_attribute, mcp__teleshop__create_attribute, mcp__teleshop__update_attribute, mcp__teleshop__delete_attribute, mcp__teleshop__add_attribute_values, mcp__teleshop__import_catalog, mcp__teleshop__list_customers, mcp__teleshop__get_customer
+  teleshop_list_products: true
+  teleshop_get_product: true
+  teleshop_create_product: true
+  teleshop_batch_create_products: true
+  teleshop_update_product: true
+  teleshop_delete_product: true
+  teleshop_batch_delete_products: true
+  teleshop_update_product_images: true
+  teleshop_update_product_attributes: true
+  teleshop_list_categories: true
+  teleshop_get_category: true
+  teleshop_create_category: true
+  teleshop_batch_create_categories: true
+  teleshop_update_category: true
+  teleshop_delete_category: true
+  teleshop_batch_delete_categories: true
+  teleshop_list_attributes: true
+  teleshop_get_attribute: true
+  teleshop_create_attribute: true
+  teleshop_update_attribute: true
+  teleshop_delete_attribute: true
+  teleshop_add_attribute_values: true
+  teleshop_import_catalog: true
+  teleshop_list_customers: true
+  teleshop_get_customer: true
 ---
 
 # Teleshop Catalog Manager

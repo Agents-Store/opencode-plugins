@@ -1,6 +1,5 @@
 ---
 description: Activate or deactivate an n8n workflow
-argument-hint: <workflow> [--off]
 ---
 
 # Activate Workflow

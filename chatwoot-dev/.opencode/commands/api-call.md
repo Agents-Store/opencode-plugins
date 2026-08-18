@@ -1,8 +1,5 @@
 ---
 description: Build (and optionally run) an authenticated Chatwoot REST API request — picks the correct API family and auth header, reads GETs freely, and confirms before any write.
-argument-hint:
-  - resource or action
-  - e.g. "list open conversations in inbox 5"
 ---
 
 Construct a correct, authenticated Chatwoot API request for: **$ARGUMENTS**
@@ -21,12 +18,12 @@ Follow these steps:
 2. **Find the exact endpoint** in the bundled specs before composing the request — do not
    guess paths or field names:
    ```bash
-   D="${CLAUDE_PLUGIN_ROOT}/skills/api-reference/references/openapi"
+   D="./skills/api-reference/references/openapi"
    jq -r '.paths | keys[]' "$D/application_swagger.json" | grep -i <keyword>
    jq '.paths["<path>"]' "$D/application_swagger.json"
    ```
    The human-readable endpoint tables are in
-   `${CLAUDE_PLUGIN_ROOT}/skills/api-reference/references/{application,platform,client}-api.md`.
+   `./skills/api-reference/references/{application,platform,client}-api.md`.
 
 3. **Build the curl** with the right auth header (`api_access_token`, never Bearer):
    ```bash

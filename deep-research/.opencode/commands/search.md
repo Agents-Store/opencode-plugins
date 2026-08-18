@@ -1,6 +1,5 @@
 ---
 description: Search the web using optimal provider with automatic fallback
-argument-hint: <query> [--type <web|code|academic>]
 ---
 
 # Web Search

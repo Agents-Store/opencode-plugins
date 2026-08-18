@@ -12,13 +12,10 @@ description: |
   user: "Set up API credentials for my Slack integration"
   </example>
 mode: subagent
-model: anthropic/claude-sonnet-4-5
+model: anthropic/claude-sonnet-5
 temperature: 0.2
-permission:
-  edit: allow
-  bash: allow
 tools:
-  - n8n__*
+  n8n_*: true
 ---
 
 # n8n Assistant

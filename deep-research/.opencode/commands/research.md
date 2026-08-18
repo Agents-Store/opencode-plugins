@@ -1,6 +1,5 @@
 ---
 description: Conduct comprehensive deep research on a topic using 7-step algorithm
-argument-hint: <topic> [--type <competitive|market|technical|person|topic|news>] [--depth <quick|standard|deep>]
 ---
 
 # Deep Research

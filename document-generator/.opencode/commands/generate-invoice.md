@@ -1,6 +1,5 @@
 ---
 description: Generate a professional invoice (PDF)
-argument-hint: <invoice-number> [--company <name>] [--client <name>]
 ---
 
 # Generate Invoice

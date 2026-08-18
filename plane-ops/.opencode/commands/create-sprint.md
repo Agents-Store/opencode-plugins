@@ -1,6 +1,5 @@
 ---
 description: Create a new sprint cycle in Plane
-argument-hint: <project> <name> --start <YYYY-MM-DD> --end <YYYY-MM-DD>
 ---
 
 # Create Sprint

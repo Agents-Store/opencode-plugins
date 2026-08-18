@@ -1,6 +1,5 @@
 ---
 description: Design a NocoBase UI block layout
-argument-hint: <collection> <block-type>
 ---
 
 # Design UI Block

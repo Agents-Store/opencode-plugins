@@ -1,6 +1,5 @@
 ---
 description: Generate a professional cost estimate / quotation (PDF)
-argument-hint: <estimate-number> [--company <name>] [--client <name>]
 ---
 
 # Generate Estimate

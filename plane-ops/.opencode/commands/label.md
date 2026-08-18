@@ -1,6 +1,5 @@
 ---
 description: Manage Plane labels — list, create, update, delete, or apply to a work item
-argument-hint: <action> <project> [args...]
 ---
 
 # Label

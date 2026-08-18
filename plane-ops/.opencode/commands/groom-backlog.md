@@ -1,6 +1,5 @@
 ---
 description: Run a backlog grooming session — refine, estimate, and prioritize
-argument-hint: <project> [--limit <n>]
 ---
 
 # Groom Backlog

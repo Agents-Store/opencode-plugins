@@ -1,7 +1,5 @@
 ---
 description: Check Sendpulse account balance and email credits
-argument-hint:
-  - '--detailed'
 ---
 
 # Check Balance

@@ -1,6 +1,5 @@
 ---
 description: Close current sprint — review completion, transfer incomplete items, archive
-argument-hint: <project> [--transfer-to <next-cycle-name>]
 ---
 
 # Close Sprint

@@ -1,6 +1,5 @@
 ---
 description: Summarize a topic or URL content
-argument-hint: <topic-or-url>
 ---
 
 # Summarize

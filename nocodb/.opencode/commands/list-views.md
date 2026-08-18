@@ -1,6 +1,5 @@
 ---
 description: List views for a NocoDB table
-argument-hint: <table>
 ---
 
 # List Views

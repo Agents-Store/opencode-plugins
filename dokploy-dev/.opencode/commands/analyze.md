@@ -1,14 +1,12 @@
 ---
 description: AI-summarise a failed Dokploy deployment or a crashing container via the configured ai provider
-argument-hint:
-  - deployment-id|app-name-or-id|compose-name-or-id
 ---
 
 # AI-Analyse a Failure
 
 Pipeline around `ai-analyzeLogs`: fetch the relevant log text, then ask the configured AI provider for a root cause + suggested fix. `ai-analyzeLogs` takes the **log text** (not a `deploymentId`) plus an `aiId` and a `context`.
 
-Follow the `read-logs` skill (`${CLAUDE_PLUGIN_ROOT}/skills/read-logs/SKILL.md`) §5 for the analyze step.
+Follow the `read-logs` skill (`./skills/read-logs/SKILL.md`) §5 for the analyze step.
 
 ## Arguments
 

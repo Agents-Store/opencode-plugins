@@ -1,7 +1,5 @@
 ---
 description: Scaffold a fresh PayloadCMS v3 project with create-payload-app, walking through database adapter, template, and package manager choices.
-argument-hint:
-  - project-name
 ---
 
 # /payloadcms-dev:scaffold

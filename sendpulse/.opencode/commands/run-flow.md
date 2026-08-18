@@ -1,6 +1,5 @@
 ---
 description: Run a chatbot automation flow for a contact
-argument-hint: <flow-id> <contact-id>
 ---
 
 # Run Flow

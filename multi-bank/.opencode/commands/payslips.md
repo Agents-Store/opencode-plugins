@@ -1,6 +1,5 @@
 ---
 description: Manage payslips — upload, send to employees, check status, generate PDF
-argument-hint: <upload|send|status|pdf|delete> <period> [identification]
 ---
 
 # Payslips (Розрахункові листки)

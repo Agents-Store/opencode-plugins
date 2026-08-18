@@ -29,16 +29,13 @@ description: |
   </commentary>
   </example>
 mode: subagent
-model: anthropic/claude-sonnet-4-5
+model: anthropic/claude-sonnet-5
 temperature: 0.2
-permission:
-  edit: allow
-  bash: allow
 tools:
-  - Read
-  - Grep
-  - Glob
-  - mcpware-dev-tools__a-minio-uploadImageToMinio
+  read: true
+  grep: true
+  glob: true
+  mcpware-dev-tools_a-minio-uploadImageToMinio: true
 ---
 
 You are a media hosting assistant. You help users upload images to MinIO-based media hosting using the `mcp__mcpware-dev-tools__a-minio-uploadImageToMinio` tool.

@@ -1,6 +1,5 @@
 ---
 description: List CRM deals with optional pipeline filter
-argument-hint: '[--pipeline <id>] [--limit <number>]'
 ---
 
 # List Deals

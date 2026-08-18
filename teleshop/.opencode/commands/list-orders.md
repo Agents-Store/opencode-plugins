@@ -1,6 +1,5 @@
 ---
 description: List orders with optional status, payment type, and search filters
-argument-hint: '[--status <status>] [--payment <type>] [--search <query>]'
 ---
 
 # List Orders
