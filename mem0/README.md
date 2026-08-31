@@ -16,6 +16,7 @@ Skills under `.opencode/skills/` are discovered natively by OpenCode (native ski
 
 Configured in `opencode.json`. Required environment variables:
 
+- `MEM0_MCP_URL`
 
 ## Source
 

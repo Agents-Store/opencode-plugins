@@ -3,7 +3,7 @@
   "mcp": {
     "mem0": {
       "type": "remote",
-      "url": "https://my-mcp.mcpware.net/mcp/mem0-user",
+      "url": "{env:MEM0_MCP_URL}",
       "enabled": true
     }
   }
