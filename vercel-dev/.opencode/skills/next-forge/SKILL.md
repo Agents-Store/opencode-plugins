@@ -1,7 +1,95 @@
 ---
 name: next-forge
 description: next-forge expert guidance — production-grade Turborepo monorepo SaaS starter by Vercel. Use when working in a next-forge project, scaffolding with `npx next-forge init`, or editing @repo/* workspace packages.
-metadata: null
+metadata:
+  priority: 6
+  docs:
+    - https://next-forge.com/docs
+    - https://github.com/haydenbleasel/next-forge
+  pathPatterns:
+    - pnpm-workspace.yaml
+    - apps/app/**
+    - apps/web/**
+    - apps/api/**
+    - apps/email/**
+    - apps/docs/**
+    - apps/studio/**
+    - apps/storybook/**
+    - packages/auth/**
+    - packages/database/**
+    - packages/design-system/**
+    - packages/payments/**
+    - packages/email/**
+    - packages/analytics/**
+    - packages/observability/**
+    - packages/security/**
+    - packages/ai/**
+    - packages/cms/**
+    - packages/collaboration/**
+    - packages/feature-flags/**
+    - packages/internationalization/**
+    - packages/notifications/**
+    - packages/rate-limit/**
+    - packages/seo/**
+    - packages/storage/**
+    - packages/webhooks/**
+    - packages/next-config/**
+    - packages/typescript-config/**
+    - '**/keys.ts'
+    - '**/env.ts'
+    - '**/proxy.ts'
+    - biome.jsonc
+  bashPatterns:
+    - \bnext-forge\b
+    - \bnpx\s+next-forge\b
+    - \bpnpm\s+migrate\b
+    - \bpnpm\s+bump-deps\b
+    - \bpnpm\s+bump-ui\b
+    - \bprisma\s+(generate|db\s+push|format|studio)\b
+    - \bstripe\s+listen\b
+    - \bnpx\s+shadcn@latest\s+add\b.*-c\s+packages/design-system\b
+  importPatterns:
+    - '@repo/auth'
+    - '@repo/database'
+    - '@repo/design-system'
+    - '@repo/payments'
+    - '@repo/email'
+    - '@repo/analytics'
+    - '@repo/observability'
+    - '@repo/security'
+    - '@repo/ai'
+    - '@repo/cms'
+    - '@repo/collaboration'
+    - '@repo/feature-flags'
+    - '@repo/internationalization'
+    - '@repo/notifications'
+    - '@repo/rate-limit'
+    - '@repo/seo'
+    - '@repo/storage'
+    - '@repo/webhooks'
+    - '@repo/next-config'
+    - '@t3-oss/env-nextjs'
+    - '@rescale/nemo'
+  promptSignals:
+    phrases:
+      - next-forge
+      - next forge
+      - '@repo/'
+    allOf:
+      - - monorepo
+        - saas
+        - starter
+      - - turborepo
+        - clerk
+        - stripe
+    anyOf:
+      - saas starter
+      - production monorepo
+      - keys.ts
+      - pnpm-workspace
+    noneOf:
+      - create-t3-app
+    minScore: 6
 ---
 
 # next-forge
