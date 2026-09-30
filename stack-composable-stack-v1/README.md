@@ -26,8 +26,8 @@ Configured in `opencode.json`. Required environment variables:
 - `NOCODB_TOKEN`
 - `POSTGRESQL_MCP_TOKEN`
 - `POSTGRESQL_MCP_URL`
+- `TRIGGER_ACCESS_TOKEN`
 - `TRIGGER_API_URL`
-- `TRIGGER_SECRET_KEY`
 
 ## Source
 

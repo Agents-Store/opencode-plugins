@@ -18,8 +18,8 @@ Configured in `opencode.json`. Required environment variables:
 
 - `DIRECTUS_ADMIN_TOKEN`
 - `NEXT_PUBLIC_DIRECTUS_URL`
+- `TRIGGER_ACCESS_TOKEN`
 - `TRIGGER_API_URL`
-- `TRIGGER_SECRET_KEY`
 
 ## Source
 
