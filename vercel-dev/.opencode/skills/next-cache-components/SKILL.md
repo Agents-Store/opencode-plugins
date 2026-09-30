@@ -4,7 +4,7 @@ description: Next.js 16 Cache Components guidance — PPR, use cache directive, 
 metadata:
   priority: 6
   docs:
-    - https://nextjs.org/docs/app/getting-started/cache-components
+    - https://nextjs.org/docs/app/getting-started/caching
     - https://nextjs.org/docs/app/api-reference/directives/use-cache
   pathPatterns:
     - next.config.*
@@ -47,7 +47,7 @@ metadata:
       upgradeToSkill: next-cache-components
       upgradeWhy: Guides migration from unstable_cache to use cache directive with cacheTag and cacheLife.
     - pattern: '\bcacheHandler\s*:'
-      message: Singular cacheHandler is deprecated in Next.js 16 — use cacheHandlers (plural) with per-type handlers
+      message: cacheHandler (singular) is for ISR/route handler/image caching, not the use cache directive — for that, use cacheHandlers (plural) instead
       severity: recommended
     - pattern: revalidateTag\(\s*['"][^'"]+['"]\s*\)
       message: 'Single-arg revalidateTag(tag) is deprecated in Next.js 16 — pass a cacheLife profile: revalidateTag(tag, "max")'
@@ -198,7 +198,7 @@ async function getData() {
 }
 ```
 
-Built-in profiles: `'default'`, `'minutes'`, `'hours'`, `'days'`, `'weeks'`, `'max'`
+Built-in profiles: `'default'`, `'seconds'`, `'minutes'`, `'hours'`, `'days'`, `'weeks'`, `'max'`
 
 ### Inline Configuration
 
@@ -262,7 +262,7 @@ import { revalidateTag } from 'next/cache'
 
 export async function createPost(data: FormData) {
   await db.posts.create({ data })
-  revalidateTag('posts')  // Background - next request sees fresh data
+  revalidateTag('posts', 'max')  // Stale-while-revalidate - next request sees stale content while revalidating
 }
 ```
 
@@ -457,6 +457,6 @@ async function DynamicContent() {
 ```
 
 Sources:
-- [Cache Components Guide](https://nextjs.org/docs/app/getting-started/cache-components)
+- [Caching Guide](https://nextjs.org/docs/app/getting-started/caching)
 - [use cache Directive](https://nextjs.org/docs/app/api-reference/directives/use-cache)
 - [unstable_cache (legacy)](https://nextjs.org/docs/app/api-reference/functions/unstable_cache)
