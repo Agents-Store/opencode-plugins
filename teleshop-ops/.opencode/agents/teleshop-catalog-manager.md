@@ -4,31 +4,31 @@ mode: subagent
 model: anthropic/claude-sonnet-5
 temperature: 0.2
 tools:
-  teleshop_list_products: true
-  teleshop_get_product: true
-  teleshop_create_product: true
-  teleshop_batch_create_products: true
-  teleshop_update_product: true
-  teleshop_delete_product: true
-  teleshop_batch_delete_products: true
-  teleshop_update_product_images: true
-  teleshop_update_product_attributes: true
-  teleshop_list_categories: true
-  teleshop_get_category: true
-  teleshop_create_category: true
-  teleshop_batch_create_categories: true
-  teleshop_update_category: true
-  teleshop_delete_category: true
-  teleshop_batch_delete_categories: true
-  teleshop_list_attributes: true
-  teleshop_get_attribute: true
-  teleshop_create_attribute: true
-  teleshop_update_attribute: true
-  teleshop_delete_attribute: true
-  teleshop_add_attribute_values: true
-  teleshop_import_catalog: true
-  teleshop_list_customers: true
-  teleshop_get_customer: true
+  plugin_teleshop-ops_teleshop_list_products: true
+  plugin_teleshop-ops_teleshop_get_product: true
+  plugin_teleshop-ops_teleshop_create_product: true
+  plugin_teleshop-ops_teleshop_batch_create_products: true
+  plugin_teleshop-ops_teleshop_update_product: true
+  plugin_teleshop-ops_teleshop_delete_product: true
+  plugin_teleshop-ops_teleshop_batch_delete_products: true
+  plugin_teleshop-ops_teleshop_update_product_images: true
+  plugin_teleshop-ops_teleshop_update_product_attributes: true
+  plugin_teleshop-ops_teleshop_list_categories: true
+  plugin_teleshop-ops_teleshop_get_category: true
+  plugin_teleshop-ops_teleshop_create_category: true
+  plugin_teleshop-ops_teleshop_batch_create_categories: true
+  plugin_teleshop-ops_teleshop_update_category: true
+  plugin_teleshop-ops_teleshop_delete_category: true
+  plugin_teleshop-ops_teleshop_batch_delete_categories: true
+  plugin_teleshop-ops_teleshop_list_attributes: true
+  plugin_teleshop-ops_teleshop_get_attribute: true
+  plugin_teleshop-ops_teleshop_create_attribute: true
+  plugin_teleshop-ops_teleshop_update_attribute: true
+  plugin_teleshop-ops_teleshop_delete_attribute: true
+  plugin_teleshop-ops_teleshop_add_attribute_values: true
+  plugin_teleshop-ops_teleshop_import_catalog: true
+  plugin_teleshop-ops_teleshop_list_customers: true
+  plugin_teleshop-ops_teleshop_get_customer: true
 ---
 
 # Teleshop Catalog Manager

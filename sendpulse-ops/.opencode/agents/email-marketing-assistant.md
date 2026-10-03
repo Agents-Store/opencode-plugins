@@ -4,8 +4,8 @@ mode: subagent
 model: anthropic/claude-sonnet-5
 temperature: 0.2
 tools:
-  sendpulse_email_*: true
-  sendpulse_smtp_*: true
+  plugin_sendpulse-ops_sendpulse_email_*: true
+  plugin_sendpulse-ops_sendpulse_smtp_*: true
 ---
 
 # Email Marketing Assistant

@@ -41,7 +41,7 @@
       "type": "remote",
       "url": "{env:NOCODB_MCP_URL}",
       "headers": {
-        "xc-mcp-token": "{env:NOCODB_TOKEN}"
+        "xc-mcp-token": "{env:NOCODB_MCP_TOKEN}"
       },
       "enabled": true
     },

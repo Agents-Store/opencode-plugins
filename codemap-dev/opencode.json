@@ -10,7 +10,7 @@
       "type": "local",
       "command": [
         "npx",
-        "@playwright/mcp@latest",
+        "@playwright/mcp@0.0.83",
         "--headless"
       ],
       "enabled": true

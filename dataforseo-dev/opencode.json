@@ -6,7 +6,7 @@
       "command": [
         "npx",
         "-y",
-        "dataforseo-mcp-server@latest"
+        "dataforseo-mcp-server@3"
       ],
       "environment": {
         "DATAFORSEO_USERNAME": "{env:DATAFORSEO_USERNAME}",

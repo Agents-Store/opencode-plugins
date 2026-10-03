@@ -9,15 +9,6 @@
         "mcp"
       ],
       "enabled": true
-    },
-    "shadcn-community": {
-      "type": "local",
-      "command": [
-        "npx",
-        "-y",
-        "@jpisnice/shadcn-ui-mcp-server"
-      ],
-      "enabled": true
     }
   }
 }
