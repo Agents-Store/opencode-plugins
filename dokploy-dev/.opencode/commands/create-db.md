@@ -4,6 +4,8 @@ description: Create and deploy a database in a Dokploy project
 
 # Create Database
 
+Follow the `mcp-patterns` skill (`./skills/mcp-patterns/SKILL.md`) for the database tool pattern and usage notes; read it before the first call.
+
 Create and deploy a database instance in a Dokploy project.
 
 ## Arguments

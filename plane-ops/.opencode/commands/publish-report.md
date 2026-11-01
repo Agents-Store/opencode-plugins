@@ -4,7 +4,7 @@ description: Publish a Plane page — sprint report, retro, release notes, or ro
 
 # Publish Report
 
-Generate and publish a Plane project page using a template from the `pages-publishing` skill.
+Generate and publish a Plane project page using a template from the `plane-ops:pages-publishing` skill.
 
 ## Arguments
 

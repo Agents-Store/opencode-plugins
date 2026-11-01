@@ -6,6 +6,8 @@ description: Create a new product in the store
 
 Create a new product in the Teleshop store.
 
+Method and rules: the `teleshop-ops:product-management` skill.
+
 ## Arguments
 Format: `<title> <sku> <price> [--quantity <n>] [--category <id>] [--description <text>]`
 - title: Product title (required)

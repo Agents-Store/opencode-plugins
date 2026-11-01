@@ -4,6 +4,8 @@ description: List files in Directus with optional folder or type filter
 
 # List Files
 
+Follow the `file-management` skill (`./skills/file-management/SKILL.md`) for the files, folders and asset tools; read it before the first call.
+
 ## Arguments
 
 - `--folder <name>` — Filter by folder name

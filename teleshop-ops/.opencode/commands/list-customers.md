@@ -6,6 +6,8 @@ description: List store customers with optional search
 
 List customers of the Teleshop store.
 
+Method and rules: the `teleshop-ops:customer-management` skill.
+
 ## Arguments
 Format: `[--search <query>]`
 - --search: Search by name, phone, email, or Telegram username (optional)

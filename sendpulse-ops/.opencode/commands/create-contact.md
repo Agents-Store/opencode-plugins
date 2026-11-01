@@ -6,6 +6,8 @@ description: Create a new CRM contact
 
 Create a new CRM contact with email, name, and phone.
 
+Method and rules: the `sendpulse-ops:crm-contacts` skill.
+
 ## Arguments
 Format: `<email> [--name <name>] [--phone <phone>]`
 - email: Contact email address (required)

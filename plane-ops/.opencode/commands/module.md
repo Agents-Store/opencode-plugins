@@ -6,6 +6,8 @@ description: Manage Plane modules — list, get, update, add items, archive (com
 
 Operate on modules (feature workstreams) beyond creation. For initial creation use `/create-module`.
 
+Method and rules: the `plane-ops:modules` skill.
+
 ## Arguments
 
 Format: `<action> <project> [args...]`

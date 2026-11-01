@@ -6,6 +6,8 @@ description: List all product attributes with their values
 
 List all product attributes in the Teleshop store.
 
+Method and rules: the `teleshop-ops:attribute-management` skill.
+
 ## Arguments
 Format: `[--search <query>]`
 - --search: Search attributes by name (optional)

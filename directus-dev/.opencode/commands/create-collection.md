@@ -4,6 +4,8 @@ description: Create a new Directus collection with optional fields
 
 # Create Collection
 
+Follow the `schema-design` skill (`./skills/schema-design/SKILL.md`) for the creation order, system fields and primary key rules; read it before the first call.
+
 ## Arguments
 
 - `name` (required) — Collection name (snake_case recommended)

@@ -4,7 +4,7 @@ description: Crawl an entire website or map its structure
 
 # Crawl Site
 
-Crawl a website to extract all pages or map its structure. See CONNECTORS.md for provider mapping.
+Crawl a website to extract all pages or map its structure. Follow `./skills/content-extraction/SKILL.md` for crawling and batch reading. See CONNECTORS.md for provider mapping.
 
 ## Process
 

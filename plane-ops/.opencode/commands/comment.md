@@ -6,6 +6,8 @@ description: Add or list comments on a Plane work item
 
 Add or list comments on a Plane work item.
 
+Method and rules: the `plane-ops:work-items` skill.
+
 ## Arguments
 
 Format: `<action> <project> <item> [body]`

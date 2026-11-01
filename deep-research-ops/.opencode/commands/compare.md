@@ -4,7 +4,7 @@ description: Compare multiple products, companies, or technologies
 
 # Compare
 
-Comparative analysis of multiple items using the Comparison Table template. See CONNECTORS.md for provider mapping.
+Comparative analysis of multiple items using the Comparison Table template. Follow the competitive-analysis path of `./skills/deep-research/SKILL.md` and the template in `./skills/report-generation/SKILL.md`. See CONNECTORS.md for provider mapping.
 
 ## Process
 

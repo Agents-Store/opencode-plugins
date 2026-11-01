@@ -6,6 +6,8 @@ description: Create a new CRM deal in a pipeline
 
 Create a new CRM deal in a sales pipeline.
 
+Method and rules: the `sendpulse-ops:crm-deals-pipelines` skill.
+
 ## Arguments
 Format: `<deal-name> [--pipeline <id>] [--amount <amount>]`
 - deal-name: Name for the deal

@@ -4,6 +4,8 @@ description: Add a custom domain to a Dokploy application
 
 # Add Domain
 
+Follow the `mcp-patterns` skill (`./skills/mcp-patterns/SKILL.md`) for the domain-create parameters and the domain usage notes; read it before the first call.
+
 Add a custom domain to a Dokploy application with optional HTTPS.
 
 ## Arguments

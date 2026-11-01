@@ -6,6 +6,8 @@ description: List all product categories with optional search
 
 List all product categories in the Teleshop store.
 
+Method and rules: the `teleshop-ops:category-management` skill.
+
 ## Arguments
 Format: `[--search <query>]`
 - --search: Search categories by title (optional)

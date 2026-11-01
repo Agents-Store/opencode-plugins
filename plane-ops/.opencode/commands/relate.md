@@ -6,6 +6,8 @@ description: Create a relation between two Plane work items (block, duplicate, r
 
 Create or remove a typed relation between two work items.
 
+Method and rules: the `plane-ops:work-items` skill.
+
 ## Arguments
 
 Format: `<relation> <project> <from-item> <to-item>`

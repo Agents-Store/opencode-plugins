@@ -6,6 +6,8 @@ description: List CRM deals with optional pipeline filter
 
 List CRM deals, optionally filtered by pipeline.
 
+Method and rules: the `sendpulse-ops:crm-deals-pipelines` skill.
+
 ## Arguments
 Format: `[--pipeline <id>] [--limit <number>]`
 - --pipeline: Filter by pipeline ID (optional)

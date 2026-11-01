@@ -4,6 +4,8 @@ description: Start the Trigger.dev dev server
 
 # Start Dev Server
 
+Method and rules: the `trigger-dev:cli-recipes` skill.
+
 1. Verify `trigger.config.ts` exists in the project
 2. Build the dev command:
    - Base: `npx trigger.dev@latest dev` (`dev` is a command group; `start` is the default sub-command, so this runs `dev start`)
