@@ -1,0 +1,62 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "firecrawl": {
+      "type": "remote",
+      "url": "https://mcp.firecrawl.dev/v2/mcp",
+      "headers": {
+        "Authorization": "Bearer {env:FIRECRAWL_API_KEY}"
+      },
+      "enabled": true
+    },
+    "apify": {
+      "type": "remote",
+      "url": "https://mcp.apify.com",
+      "headers": {
+        "Authorization": "Bearer {env:APIFY_TOKEN}"
+      },
+      "enabled": true
+    },
+    "dataforseo": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "dataforseo-mcp-server@3"
+      ],
+      "environment": {
+        "DATAFORSEO_USERNAME": "{env:DATAFORSEO_USERNAME}",
+        "DATAFORSEO_PASSWORD": "{env:DATAFORSEO_PASSWORD}"
+      },
+      "enabled": true
+    },
+    "google-ads": {
+      "type": "local",
+      "command": [
+        "pipx",
+        "run",
+        "--spec",
+        "google-ads-mcp==0.0.6",
+        "google-ads-mcp"
+      ],
+      "environment": {
+        "GOOGLE_CLOUD_PROJECT": "{env:GOOGLE_CLOUD_PROJECT}",
+        "GOOGLE_APPLICATION_CREDENTIALS": "{env:GOOGLE_APPLICATION_CREDENTIALS}"
+      },
+      "enabled": true
+    },
+    "meta-ads": {
+      "type": "remote",
+      "url": "https://mcp.facebook.com/ads",
+      "headers": {
+        "Authorization": "Bearer {env:META_ACCESS_TOKEN}"
+      },
+      "enabled": true
+    },
+    "tiktok-ads": {
+      "type": "remote",
+      "url": "https://business-api.tiktok.com/open_mcp/tt-ads-mcp-layer",
+      "enabled": true
+    }
+  }
+}
